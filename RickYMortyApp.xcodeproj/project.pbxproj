@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		740A1C35290FD7CE0038A1DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740A1C34290FD7CE0038A1DF /* AppDelegate.swift */; };
-		740A1C37290FD7CE0038A1DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740A1C36290FD7CE0038A1DF /* SceneDelegate.swift */; };
 		740A1C39290FD7CE0038A1DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740A1C38290FD7CE0038A1DF /* ViewController.swift */; };
 		740A1C3C290FD7CE0038A1DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 740A1C3A290FD7CE0038A1DF /* Main.storyboard */; };
 		740A1C3E290FD7CF0038A1DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 740A1C3D290FD7CF0038A1DF /* Assets.xcassets */; };
@@ -16,6 +15,9 @@
 		740A1C4C290FD7D00038A1DF /* RickYMortyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740A1C4B290FD7D00038A1DF /* RickYMortyAppTests.swift */; };
 		740A1C56290FD7D00038A1DF /* RickYMortyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740A1C55290FD7D00038A1DF /* RickYMortyAppUITests.swift */; };
 		740A1C58290FD7D00038A1DF /* RickYMortyAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740A1C57290FD7D00038A1DF /* RickYMortyAppUITestsLaunchTests.swift */; };
+		740A1C66290FDA8C0038A1DF /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740A1C65290FDA8C0038A1DF /* Character.swift */; };
+		740A1C68290FDDED0038A1DF /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740A1C67290FDDED0038A1DF /* Location.swift */; };
+		740A1C6A290FDE990038A1DF /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740A1C69290FDE990038A1DF /* Episode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,6 @@
 /* Begin PBXFileReference section */
 		740A1C31290FD7CE0038A1DF /* RickYMortyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickYMortyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		740A1C34290FD7CE0038A1DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		740A1C36290FD7CE0038A1DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		740A1C38290FD7CE0038A1DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		740A1C3B290FD7CE0038A1DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		740A1C3D290FD7CF0038A1DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		740A1C51290FD7D00038A1DF /* RickYMortyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RickYMortyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		740A1C55290FD7D00038A1DF /* RickYMortyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickYMortyAppUITests.swift; sourceTree = "<group>"; };
 		740A1C57290FD7D00038A1DF /* RickYMortyAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickYMortyAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		740A1C65290FDA8C0038A1DF /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		740A1C67290FDDED0038A1DF /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		740A1C69290FDE990038A1DF /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +103,8 @@
 		740A1C33290FD7CE0038A1DF /* RickYMortyApp */ = {
 			isa = PBXGroup;
 			children = (
+				740A1C64290FDA180038A1DF /* Controladores */,
 				740A1C34290FD7CE0038A1DF /* AppDelegate.swift */,
-				740A1C36290FD7CE0038A1DF /* SceneDelegate.swift */,
 				740A1C38290FD7CE0038A1DF /* ViewController.swift */,
 				740A1C3A290FD7CE0038A1DF /* Main.storyboard */,
 				740A1C3D290FD7CF0038A1DF /* Assets.xcassets */,
@@ -125,6 +129,16 @@
 				740A1C57290FD7D00038A1DF /* RickYMortyAppUITestsLaunchTests.swift */,
 			);
 			path = RickYMortyAppUITests;
+			sourceTree = "<group>";
+		};
+		740A1C64290FDA180038A1DF /* Controladores */ = {
+			isa = PBXGroup;
+			children = (
+				740A1C65290FDA8C0038A1DF /* Character.swift */,
+				740A1C67290FDDED0038A1DF /* Location.swift */,
+				740A1C69290FDE990038A1DF /* Episode.swift */,
+			);
+			path = Controladores;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +272,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				740A1C66290FDA8C0038A1DF /* Character.swift in Sources */,
 				740A1C39290FD7CE0038A1DF /* ViewController.swift in Sources */,
+				740A1C68290FDDED0038A1DF /* Location.swift in Sources */,
+				740A1C6A290FDE990038A1DF /* Episode.swift in Sources */,
 				740A1C35290FD7CE0038A1DF /* AppDelegate.swift in Sources */,
-				740A1C37290FD7CE0038A1DF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

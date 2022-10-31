@@ -103,12 +103,12 @@
 		740A1C33290FD7CE0038A1DF /* RickYMortyApp */ = {
 			isa = PBXGroup;
 			children = (
-				740A1C64290FDA180038A1DF /* Controladores */,
 				740A1C34290FD7CE0038A1DF /* AppDelegate.swift */,
+				740A1C64290FDA180038A1DF /* Controladores */,
 				740A1C38290FD7CE0038A1DF /* ViewController.swift */,
 				740A1C3A290FD7CE0038A1DF /* Main.storyboard */,
-				740A1C3D290FD7CF0038A1DF /* Assets.xcassets */,
 				740A1C3F290FD7CF0038A1DF /* LaunchScreen.storyboard */,
+				740A1C3D290FD7CF0038A1DF /* Assets.xcassets */,
 				740A1C42290FD7CF0038A1DF /* Info.plist */,
 			);
 			path = RickYMortyApp;

@@ -18,6 +18,7 @@
 		740A1C66290FDA8C0038A1DF /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740A1C65290FDA8C0038A1DF /* Character.swift */; };
 		740A1C68290FDDED0038A1DF /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740A1C67290FDDED0038A1DF /* Location.swift */; };
 		740A1C6A290FDE990038A1DF /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740A1C69290FDE990038A1DF /* Episode.swift */; };
+		741FCCA129102342002EC277 /* APIItemKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741FCCA029102342002EC277 /* APIItemKind.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		740A1C65290FDA8C0038A1DF /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		740A1C67290FDDED0038A1DF /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		740A1C69290FDE990038A1DF /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		741FCCA029102342002EC277 /* APIItemKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIItemKind.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 				740A1C65290FDA8C0038A1DF /* Character.swift */,
 				740A1C67290FDDED0038A1DF /* Location.swift */,
 				740A1C69290FDE990038A1DF /* Episode.swift */,
+				741FCCA029102342002EC277 /* APIItemKind.swift */,
 			);
 			path = Modelos;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				740A1C66290FDA8C0038A1DF /* Character.swift in Sources */,
+				741FCCA129102342002EC277 /* APIItemKind.swift in Sources */,
 				740A1C39290FD7CE0038A1DF /* ViewController.swift in Sources */,
 				740A1C68290FDDED0038A1DF /* Location.swift in Sources */,
 				740A1C6A290FDE990038A1DF /* Episode.swift in Sources */,

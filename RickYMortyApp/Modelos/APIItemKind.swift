@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+enum APIItemKind: String {
+    
+case character
+case location
+case episode
+    
+}

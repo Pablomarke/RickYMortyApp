@@ -104,7 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				740A1C34290FD7CE0038A1DF /* AppDelegate.swift */,
-				740A1C64290FDA180038A1DF /* Controladores */,
+				740A1C64290FDA180038A1DF /* Modelos */,
 				740A1C38290FD7CE0038A1DF /* ViewController.swift */,
 				740A1C3A290FD7CE0038A1DF /* Main.storyboard */,
 				740A1C3F290FD7CF0038A1DF /* LaunchScreen.storyboard */,
@@ -131,14 +131,14 @@
 			path = RickYMortyAppUITests;
 			sourceTree = "<group>";
 		};
-		740A1C64290FDA180038A1DF /* Controladores */ = {
+		740A1C64290FDA180038A1DF /* Modelos */ = {
 			isa = PBXGroup;
 			children = (
 				740A1C65290FDA8C0038A1DF /* Character.swift */,
 				740A1C67290FDDED0038A1DF /* Location.swift */,
 				740A1C69290FDE990038A1DF /* Episode.swift */,
 			);
-			path = Controladores;
+			path = Modelos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

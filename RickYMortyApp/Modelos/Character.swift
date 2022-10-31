@@ -15,14 +15,14 @@ struct Character: Codable {
     let species: String
     let type: String
     let gender: String
-    let origin: Location
+    let origin: Location?
     let location: Location
     let image: String
     let episode: [String]
     let url: String
     let created: String
   
-    init(id:Int, name: String, status: String, species: String, type: String, gender: String, origin: Location, location: Location, image: String, episode: [String], url: String, created: String){
+    init(id:Int, name: String, status: String, species: String, type: String, gender: String, origin: Location?, location: Location, image: String, episode: [String], url: String, created: String){
         self.id = id
         self.name = name
         self.status = status

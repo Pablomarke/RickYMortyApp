@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - Location
-struct Location: Codable {
+struct Location: Decodable {
     let id: Int
     let name, type, dimension: String
     let residents: [String]

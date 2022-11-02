@@ -14,13 +14,15 @@ final class NetWorkService {
     
     private let cbaseUrl = "https://rickandmortyapi.com/api/"
     private let cstatusOk = 200...299
+   
     func getCharacter(id: Int){
         
         let url = "\(cbaseUrl)character/\(id)"
+        
         AF.request(url, method: .get).validate(statusCode: cstatusOk).responseDecodable(of: Character.self) { response in
             
-            if let character = response.value?.id {
-                print(character)
+            if let character = response.value?.name {
+                print(Character.self.CodingKeys.name)
             } else {
                 print(response.error?.responseCode ?? "No error")
             }

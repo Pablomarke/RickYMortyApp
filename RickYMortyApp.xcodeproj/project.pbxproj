@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		740A1C35290FD7CE0038A1DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740A1C34290FD7CE0038A1DF /* AppDelegate.swift */; };
-		740A1C39290FD7CE0038A1DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740A1C38290FD7CE0038A1DF /* ViewController.swift */; };
 		740A1C3C290FD7CE0038A1DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 740A1C3A290FD7CE0038A1DF /* Main.storyboard */; };
 		740A1C3E290FD7CF0038A1DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 740A1C3D290FD7CF0038A1DF /* Assets.xcassets */; };
 		740A1C41290FD7CF0038A1DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 740A1C3F290FD7CF0038A1DF /* LaunchScreen.storyboard */; };
@@ -21,6 +20,8 @@
 		741FCCA129102342002EC277 /* APIItemKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741FCCA029102342002EC277 /* APIItemKind.swift */; };
 		741FCCA429102ED8002EC277 /* NetWorkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741FCCA329102ED8002EC277 /* NetWorkService.swift */; };
 		741FCCA729102FEF002EC277 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 741FCCA629102FEF002EC277 /* Alamofire */; };
+		743B614E2912F08A00494B06 /* PruebaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743B614C2912F08A00494B06 /* PruebaViewController.swift */; };
+		743B614F2912F08A00494B06 /* PruebaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 743B614D2912F08A00494B06 /* PruebaViewController.xib */; };
 		A387B0B65E6AA772233026A7 /* Pods_RickYMortyApp_RickYMortyAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A3AF6F3CB99E7B7E2D6A7F7 /* Pods_RickYMortyApp_RickYMortyAppUITests.framework */; };
 		D6F9042D9314155DBD937971 /* Pods_RickYMortyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF2BC2E44D09BABE808A2B1 /* Pods_RickYMortyApp.framework */; };
 		E1C20BE92CDBDCE582F636F2 /* Pods_RickYMortyAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93C2008DB2457EC88674F9E0 /* Pods_RickYMortyAppTests.framework */; };
@@ -48,7 +49,6 @@
 		2BBECF420C546574F22D8C88 /* Pods-RickYMortyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickYMortyApp.release.xcconfig"; path = "Target Support Files/Pods-RickYMortyApp/Pods-RickYMortyApp.release.xcconfig"; sourceTree = "<group>"; };
 		740A1C31290FD7CE0038A1DF /* RickYMortyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickYMortyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		740A1C34290FD7CE0038A1DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		740A1C38290FD7CE0038A1DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		740A1C3B290FD7CE0038A1DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		740A1C3D290FD7CF0038A1DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		740A1C40290FD7CF0038A1DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,6 +63,8 @@
 		740A1C69290FDE990038A1DF /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		741FCCA029102342002EC277 /* APIItemKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIItemKind.swift; sourceTree = "<group>"; };
 		741FCCA329102ED8002EC277 /* NetWorkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkService.swift; sourceTree = "<group>"; };
+		743B614C2912F08A00494B06 /* PruebaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PruebaViewController.swift; sourceTree = "<group>"; };
+		743B614D2912F08A00494B06 /* PruebaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PruebaViewController.xib; sourceTree = "<group>"; };
 		887D6DC3DA9688D2051E2B04 /* Pods-RickYMortyAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickYMortyAppTests.debug.xcconfig"; path = "Target Support Files/Pods-RickYMortyAppTests/Pods-RickYMortyAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8A3AF6F3CB99E7B7E2D6A7F7 /* Pods_RickYMortyApp_RickYMortyAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RickYMortyApp_RickYMortyAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		921ED0B9506A8EB63B4D59AB /* Pods-RickYMortyApp-RickYMortyAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickYMortyApp-RickYMortyAppUITests.release.xcconfig"; path = "Target Support Files/Pods-RickYMortyApp-RickYMortyAppUITests/Pods-RickYMortyApp-RickYMortyAppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,7 +113,6 @@
 				887D6DC3DA9688D2051E2B04 /* Pods-RickYMortyAppTests.debug.xcconfig */,
 				985153B2558E19457DA66C96 /* Pods-RickYMortyAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -143,11 +144,12 @@
 				740A1C34290FD7CE0038A1DF /* AppDelegate.swift */,
 				740A1C64290FDA180038A1DF /* Modelos */,
 				741FCCA229102E92002EC277 /* NetWorking */,
-				740A1C38290FD7CE0038A1DF /* ViewController.swift */,
 				740A1C3A290FD7CE0038A1DF /* Main.storyboard */,
 				740A1C3F290FD7CF0038A1DF /* LaunchScreen.storyboard */,
 				740A1C3D290FD7CF0038A1DF /* Assets.xcassets */,
 				740A1C42290FD7CF0038A1DF /* Info.plist */,
+				743B614C2912F08A00494B06 /* PruebaViewController.swift */,
+				743B614D2912F08A00494B06 /* PruebaViewController.xib */,
 			);
 			path = RickYMortyApp;
 			sourceTree = "<group>";
@@ -312,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				740A1C41290FD7CF0038A1DF /* LaunchScreen.storyboard in Resources */,
+				743B614F2912F08A00494B06 /* PruebaViewController.xib in Resources */,
 				740A1C3E290FD7CF0038A1DF /* Assets.xcassets in Resources */,
 				740A1C3C290FD7CE0038A1DF /* Main.storyboard in Resources */,
 			);
@@ -410,8 +413,8 @@
 				741FCCA429102ED8002EC277 /* NetWorkService.swift in Sources */,
 				740A1C66290FDA8C0038A1DF /* Character.swift in Sources */,
 				741FCCA129102342002EC277 /* APIItemKind.swift in Sources */,
-				740A1C39290FD7CE0038A1DF /* ViewController.swift in Sources */,
 				740A1C68290FDDED0038A1DF /* Location.swift in Sources */,
+				743B614E2912F08A00494B06 /* PruebaViewController.swift in Sources */,
 				740A1C6A290FDE990038A1DF /* Episode.swift in Sources */,
 				740A1C35290FD7CE0038A1DF /* AppDelegate.swift in Sources */,
 			);
@@ -597,6 +600,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -626,6 +630,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

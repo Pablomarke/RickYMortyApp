@@ -9,21 +9,38 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var stackViewButton: UIStackView!
+    @IBOutlet weak var characterButton: UIButton!
+    @IBOutlet weak var locationButton: UIButton!
+    @IBOutlet weak var episodeButton: UIButton!
+    @IBOutlet weak var searchButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        view.backgroundColor = .red
+        
+        //Botones
+        characterButton.tintColor = .blue
+        characterButton.backgroundColor = .systemCyan
+        
+        locationButton.tintColor = .blue
+        locationButton.backgroundColor = .systemCyan
+        
+        episodeButton.tintColor = .blue
+        episodeButton.backgroundColor = .systemCyan
+        
+        searchButton.tintColor = .blue
+        searchButton.backgroundColor = .systemCyan
+        
+        view.backgroundColor = .cyan
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func actionCharacterButton(_ sender: Any) {
     }
-    */
-
+    @IBAction func actionLocationButton(_ sender: Any) {
+    }
+    @IBAction func episodeActionButton(_ sender: Any) {
+    }
+    @IBAction func searchActionButton(_ sender: Any) {
+    }
+    
 }

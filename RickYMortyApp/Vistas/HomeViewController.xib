@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="characterButton" destination="sNC-XN-bb6" id="0j3-mP-TvC"/>
                 <outlet property="episodeButton" destination="z7d-SR-dXT" id="god-46-MfO"/>
+                <outlet property="homeImage" destination="L6f-J0-LdT" id="9e9-t1-Bn4"/>
                 <outlet property="locationButton" destination="cXL-vW-1qH" id="rs7-Co-7T9"/>
                 <outlet property="searchButton" destination="gAM-Es-Pzt" id="0am-bO-WP7"/>
                 <outlet property="stackViewButton" destination="10M-hi-8aN" id="dd1-76-yMC"/>
@@ -23,55 +24,70 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="10M-hi-8aN">
-                    <rect key="frame" x="50" y="528" width="314" height="274"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="10M-hi-8aN">
+                    <rect key="frame" x="50" y="506" width="314" height="296"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNC-XN-bb6">
-                            <rect key="frame" x="0.0" y="0.0" width="314" height="31"/>
+                            <rect key="frame" x="0.0" y="0.0" width="314" height="51.5"/>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Personajes"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Personajes">
+                                <fontDescription key="titleFontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="30"/>
+                            </buttonConfiguration>
                             <connections>
                                 <action selector="actionCharacterButton:" destination="-1" eventType="touchUpInside" id="nMB-FA-MGP"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXL-vW-1qH">
-                            <rect key="frame" x="0.0" y="81" width="314" height="31"/>
+                            <rect key="frame" x="0.0" y="81.5" width="314" height="51.5"/>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Localizaciones"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Localizaciones">
+                                <fontDescription key="titleFontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="30"/>
+                            </buttonConfiguration>
                             <connections>
                                 <action selector="actionLocationButton:" destination="-1" eventType="touchUpInside" id="hIS-u0-7ed"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z7d-SR-dXT">
-                            <rect key="frame" x="0.0" y="162" width="314" height="31"/>
+                            <rect key="frame" x="0.0" y="163" width="314" height="51.5"/>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Episodios"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Episodios">
+                                <fontDescription key="titleFontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="30"/>
+                            </buttonConfiguration>
                             <connections>
                                 <action selector="episodeActionButton:" destination="-1" eventType="touchUpInside" id="z3L-RQ-3Ig"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAM-Es-Pzt">
-                            <rect key="frame" x="0.0" y="243" width="314" height="31"/>
+                            <rect key="frame" x="0.0" y="244.5" width="314" height="51.5"/>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Buscador"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Buscador">
+                                <fontDescription key="titleFontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="30"/>
+                            </buttonConfiguration>
                             <connections>
                                 <action selector="searchActionButton:" destination="-1" eventType="touchUpInside" id="6sn-Ej-atb"/>
                             </connections>
                         </button>
                     </subviews>
                 </stackView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rick" translatesAutoresizingMaskIntoConstraints="NO" id="L6f-J0-LdT">
+                    <rect key="frame" x="20" y="194" width="374" height="155"/>
+                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="10M-hi-8aN" secondAttribute="bottom" constant="60" id="0wE-oi-yco"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="L6f-J0-LdT" secondAttribute="trailing" constant="20" id="0yA-y0-t42"/>
+                <constraint firstItem="L6f-J0-LdT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="150" id="8n0-3A-alk"/>
                 <constraint firstItem="10M-hi-8aN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="evE-B5-VVs"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="10M-hi-8aN" secondAttribute="trailing" constant="50" id="jjw-wv-I1e"/>
+                <constraint firstItem="L6f-J0-LdT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="qDm-rN-W4w"/>
             </constraints>
             <point key="canvasLocation" x="139" y="82"/>
         </view>
     </objects>
     <resources>
+        <image name="rick" width="430" height="155"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

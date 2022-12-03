@@ -6,9 +6,11 @@
 //
 
 import UIKit
+import SwiftUI
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var homeImage: UIImageView!
     @IBOutlet weak var stackViewButton: UIStackView!
     @IBOutlet weak var characterButton: UIButton!
     @IBOutlet weak var locationButton: UIButton!

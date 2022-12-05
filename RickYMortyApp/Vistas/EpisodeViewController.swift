@@ -62,8 +62,9 @@ extension EpisodeViewController {
         for cell in cells {
             UIView.animate(withDuration: 2,
                            delay: counter * 0.05,
-                           usingSpringWithDamping: 0.8, initialSpringVelocity: 0,
-                           options: .curveEaseInOut,
+                           usingSpringWithDamping: 0.8,
+                           initialSpringVelocity: 6,
+                           options: .transitionFlipFromRight  ,
                            animations: {
                 cell.transform = CGAffineTransform.identity
             },

@@ -64,11 +64,11 @@ extension CharacterViewController {
         var counter: Double = 0
         
         for cell in cells {
-            UIView.animate(withDuration: 2,
+            UIView.animate(withDuration: 1,
                            delay: counter * 0.05,
-                           usingSpringWithDamping: 0.8,
-                           initialSpringVelocity: 0,
-                           options: .curveEaseInOut,
+                           usingSpringWithDamping: 2.8,
+                           initialSpringVelocity: 2,
+                           options: .autoreverse ,
                            animations: {
                 cell.transform = CGAffineTransform.identity
             },

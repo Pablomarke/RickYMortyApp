@@ -62,7 +62,8 @@ extension LocationViewController {
             UIView.animate(withDuration: 2,
                            delay: counter * 0.05,
                            usingSpringWithDamping: 0.8,
-                           initialSpringVelocity: 0, options: .curveEaseInOut,
+                           initialSpringVelocity: 0,
+                           options: .curveEaseInOut,
                            animations: {
                 cell.transform = CGAffineTransform.identity
             },

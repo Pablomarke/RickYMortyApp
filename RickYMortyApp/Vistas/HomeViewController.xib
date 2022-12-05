@@ -25,43 +25,43 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="10M-hi-8aN">
-                    <rect key="frame" x="50" y="506" width="314" height="296"/>
+                    <rect key="frame" x="50" y="500" width="314" height="302"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNC-XN-bb6">
-                            <rect key="frame" x="0.0" y="0.0" width="314" height="51.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="314" height="53"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="Personajes">
-                                <fontDescription key="titleFontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="30"/>
+                                <fontDescription key="titleFontDescription" name="NaughtyCartoons" family="Naughty Cartoons" pointSize="20"/>
                             </buttonConfiguration>
                             <connections>
                                 <action selector="actionCharacterButton:" destination="-1" eventType="touchUpInside" id="nMB-FA-MGP"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXL-vW-1qH">
-                            <rect key="frame" x="0.0" y="81.5" width="314" height="51.5"/>
+                            <rect key="frame" x="0.0" y="83" width="314" height="53"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="Localizaciones">
-                                <fontDescription key="titleFontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="30"/>
+                                <fontDescription key="titleFontDescription" name="NaughtyCartoons" family="Naughty Cartoons" pointSize="20"/>
                             </buttonConfiguration>
                             <connections>
                                 <action selector="actionLocationButton:" destination="-1" eventType="touchUpInside" id="hIS-u0-7ed"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z7d-SR-dXT">
-                            <rect key="frame" x="0.0" y="163" width="314" height="51.5"/>
+                            <rect key="frame" x="0.0" y="166" width="314" height="53"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="Episodios">
-                                <fontDescription key="titleFontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="30"/>
+                                <fontDescription key="titleFontDescription" name="NaughtyCartoons" family="Naughty Cartoons" pointSize="20"/>
                             </buttonConfiguration>
                             <connections>
                                 <action selector="episodeActionButton:" destination="-1" eventType="touchUpInside" id="z3L-RQ-3Ig"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAM-Es-Pzt">
-                            <rect key="frame" x="0.0" y="244.5" width="314" height="51.5"/>
+                            <rect key="frame" x="0.0" y="249" width="314" height="53"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="Buscador">
-                                <fontDescription key="titleFontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="30"/>
+                                <fontDescription key="titleFontDescription" name="NaughtyCartoons" family="Naughty Cartoons" pointSize="20"/>
                             </buttonConfiguration>
                             <connections>
                                 <action selector="searchActionButton:" destination="-1" eventType="touchUpInside" id="6sn-Ej-atb"/>

@@ -29,4 +29,17 @@ final class NetWorkService {
         }
         
     }
+    func getAllCharacters(){
+        
+        let url = "\(cbaseUrl)character/"
+        
+        AF.request(url, method: .get).validate(statusCode: cstatusOk).responseDecodable(of: Character.self) { response in
+            
+            if response != nil {
+                print("character")
+            } else {
+                print(response.error?.responseCode ?? "No error")
+            }
+        }
+    }
 }

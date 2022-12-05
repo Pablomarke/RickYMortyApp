@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EpisodeViewController" customModule="RickYMortyApp" customModuleProvider="target">
             <connections>
+                <outlet property="episodeView" destination="Yk7-Sb-oPk" id="hjC-x3-Zxt"/>
+                <outlet property="tableEpisode" destination="AJ8-eX-wXJ" id="a4T-jR-6og"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,18 +20,30 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Episode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61X-kk-bqE">
-                    <rect key="frame" x="121.5" y="418" width="171" height="60"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yk7-Sb-oPk">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="AJ8-eX-wXJ">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="AJ8-eX-wXJ" secondAttribute="trailing" id="8PU-ui-w63"/>
+                        <constraint firstAttribute="bottom" secondItem="AJ8-eX-wXJ" secondAttribute="bottom" id="D65-WS-3pv"/>
+                        <constraint firstItem="AJ8-eX-wXJ" firstAttribute="top" secondItem="Yk7-Sb-oPk" secondAttribute="top" id="Y4g-eO-s8z"/>
+                        <constraint firstItem="AJ8-eX-wXJ" firstAttribute="leading" secondItem="Yk7-Sb-oPk" secondAttribute="leading" id="y6X-rX-euT"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="61X-kk-bqE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="MN8-OF-7mM"/>
-                <constraint firstItem="61X-kk-bqE" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="c5S-EC-fbh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Yk7-Sb-oPk" secondAttribute="bottom" id="JAx-UF-5sm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Yk7-Sb-oPk" secondAttribute="trailing" id="fiN-t6-qWj"/>
+                <constraint firstItem="Yk7-Sb-oPk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hPP-3a-nF2"/>
+                <constraint firstItem="Yk7-Sb-oPk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ujf-o7-Wmf"/>
             </constraints>
             <point key="canvasLocation" x="139" y="107"/>
         </view>

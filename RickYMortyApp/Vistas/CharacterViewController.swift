@@ -17,7 +17,9 @@ class CharacterViewController: UIViewController {
         self.title = "Personajes"
         self.tableCharacter.backgroundColor = .cyan
         tableCharacter.tintColor = .systemCyan
+       
         NetWorkService.shared.getAllCharacters()
+        
         setupTableView()
         registerNib()
        

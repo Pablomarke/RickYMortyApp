@@ -37,12 +37,16 @@ class HomeViewController: UIViewController {
         view.backgroundColor = .cyan
     }
     @IBAction func actionCharacterButton(_ sender: Any) {
+        print("character")
     }
     @IBAction func actionLocationButton(_ sender: Any) {
+        print("location")
     }
     @IBAction func episodeActionButton(_ sender: Any) {
+        print("episode")
     }
     @IBAction func searchActionButton(_ sender: Any) {
+        print("buscador")
     }
     
 }

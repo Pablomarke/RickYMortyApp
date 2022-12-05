@@ -9,7 +9,7 @@ import UIKit
 import SwiftUI
 
 class HomeViewController: UIViewController {
-
+    
     @IBOutlet weak var homeImage: UIImageView!
     @IBOutlet weak var stackViewButton: UIStackView!
     @IBOutlet weak var characterButton: UIButton!
@@ -36,24 +36,32 @@ class HomeViewController: UIViewController {
         
         view.backgroundColor = .cyan
     }
+    
+    
+    // MARK: Acciones de los botones
+    
     @IBAction func actionCharacterButton(_ sender: Any) {
         let characterC = CharacterViewController()
-        navigationController?.pushViewController(characterC, animated: true)
+        navigationController?.pushViewController(characterC,
+                                                 animated: true)
         print("character")
     }
     @IBAction func actionLocationButton(_ sender: Any) {
         let locationC = LocationViewController()
-        navigationController?.pushViewController(locationC, animated: true)
+        navigationController?.pushViewController(locationC,
+                                                 animated: true)
         print("location")
     }
     @IBAction func episodeActionButton(_ sender: Any) {
         let episodeC = EpisodeViewController()
-        navigationController?.pushViewController(episodeC, animated: true)
+        navigationController?.pushViewController(episodeC,
+                                                 animated: true)
         print("episode")
     }
     @IBAction func searchActionButton(_ sender: Any) {
         let searchC = SearchViewController()
-        navigationController?.pushViewController(searchC, animated: true)
+        navigationController?.pushViewController(searchC,
+                                                 animated: true)
         print("buscador")
     }
     

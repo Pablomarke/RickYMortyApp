@@ -30,6 +30,8 @@
 		7441C45B293E04A000A567CC /* EpisodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7441C459293E04A000A567CC /* EpisodeViewController.xib */; };
 		7441C45E293E04CD00A567CC /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7441C45C293E04CD00A567CC /* SearchViewController.swift */; };
 		7441C45F293E04CD00A567CC /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7441C45D293E04CD00A567CC /* SearchViewController.xib */; };
+		7441C463293E2CC400A567CC /* CustomViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7441C461293E2CC400A567CC /* CustomViewCell.swift */; };
+		7441C464293E2CC400A567CC /* CustomViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7441C462293E2CC400A567CC /* CustomViewCell.xib */; };
 		74477EEB293B90C8009B0B0F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74477EE9293B90C8009B0B0F /* HomeViewController.swift */; };
 		74477EEC293B90C8009B0B0F /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74477EEA293B90C8009B0B0F /* HomeViewController.xib */; };
 		74477EF3293B9FE0009B0B0F /* Cartoon Relief.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74477EF2293B9FE0009B0B0F /* Cartoon Relief.ttf */; };
@@ -89,6 +91,8 @@
 		7441C459293E04A000A567CC /* EpisodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeViewController.xib; sourceTree = "<group>"; };
 		7441C45C293E04CD00A567CC /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		7441C45D293E04CD00A567CC /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		7441C461293E2CC400A567CC /* CustomViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewCell.swift; sourceTree = "<group>"; };
+		7441C462293E2CC400A567CC /* CustomViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomViewCell.xib; sourceTree = "<group>"; };
 		74477EE9293B90C8009B0B0F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		74477EEA293B90C8009B0B0F /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		74477EF2293B9FE0009B0B0F /* Cartoon Relief.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cartoon Relief.ttf"; path = "../../../../../Downloads/cartoon_relief/Cartoon Relief.ttf"; sourceTree = "<group>"; };
@@ -169,6 +173,7 @@
 		740A1C33290FD7CE0038A1DF /* RickYMortyApp */ = {
 			isa = PBXGroup;
 			children = (
+				7441C460293E2CA300A567CC /* Celdas personalizadas */,
 				740A1C34290FD7CE0038A1DF /* AppDelegate.swift */,
 				740A1C64290FDA180038A1DF /* Modelos */,
 				741FCCA229102E92002EC277 /* NetWorking */,
@@ -215,6 +220,15 @@
 				741FCCA329102ED8002EC277 /* NetWorkService.swift */,
 			);
 			path = NetWorking;
+			sourceTree = "<group>";
+		};
+		7441C460293E2CA300A567CC /* Celdas personalizadas */ = {
+			isa = PBXGroup;
+			children = (
+				7441C461293E2CC400A567CC /* CustomViewCell.swift */,
+				7441C462293E2CC400A567CC /* CustomViewCell.xib */,
+			);
+			path = "Celdas personalizadas";
 			sourceTree = "<group>";
 		};
 		74477EE8293B908A009B0B0F /* Vistas */ = {
@@ -370,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7441C45B293E04A000A567CC /* EpisodeViewController.xib in Resources */,
+				7441C464293E2CC400A567CC /* CustomViewCell.xib in Resources */,
 				7441C453293E03E900A567CC /* CharacterViewController.xib in Resources */,
 				740A1C41290FD7CF0038A1DF /* LaunchScreen.storyboard in Resources */,
 				74477EF3293B9FE0009B0B0F /* Cartoon Relief.ttf in Resources */,
@@ -479,6 +494,7 @@
 			files = (
 				7441C452293E03E900A567CC /* CharacterViewController.swift in Sources */,
 				741FCCA429102ED8002EC277 /* NetWorkService.swift in Sources */,
+				7441C463293E2CC400A567CC /* CustomViewCell.swift in Sources */,
 				740A1C66290FDA8C0038A1DF /* Character.swift in Sources */,
 				741FCCA129102342002EC277 /* APIItemKind.swift in Sources */,
 				74477EEB293B90C8009B0B0F /* HomeViewController.swift in Sources */,

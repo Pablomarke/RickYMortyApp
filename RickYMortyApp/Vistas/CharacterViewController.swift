@@ -8,22 +8,44 @@
 import UIKit
 
 class CharacterViewController: UIViewController {
-
+    
+    @IBOutlet weak var ViewCharacter: UIView!
+    @IBOutlet weak var tableCharacter: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "Personajes"
+        self.tableCharacter.backgroundColor = .cyan
+        tableCharacter.tintColor = .systemCyan
         NetWorkService.shared.getAllCharacters()
+        setupTableView()
+        registerNib()
+       
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func setupTableView() {
+        tableCharacter.delegate = self
+        tableCharacter.dataSource = self
     }
-    */
+    
+    private func registerNib() {
+        let nib = UINib(nibName: "CustomViewCell", bundle: nil)
+        tableCharacter.register(nib, forCellReuseIdentifier: "CustomViewCell")
+    }
 
+}
+extension CharacterViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 100
+        
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableCharacter.dequeueReusableCell(withIdentifier: "CustomViewCell", for: indexPath) as! CustomViewCell?
+        
+        
+        return cell!
+    }
+    
+    
 }

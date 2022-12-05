@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CharacterViewController" customModule="RickYMortyApp" customModuleProvider="target">
             <connections>
+                <outlet property="ViewCharacter" destination="LDU-3Q-wIq" id="tJI-FM-sbj"/>
+                <outlet property="tableCharacter" destination="4hd-p9-L07" id="eaC-v2-YIQ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,18 +20,30 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Character" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4o-EP-jUc">
-                    <rect key="frame" x="102" y="418" width="210" height="60"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LDU-3Q-wIq">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4hd-p9-L07">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="4hd-p9-L07" secondAttribute="bottom" id="5rM-WF-CNd"/>
+                        <constraint firstItem="4hd-p9-L07" firstAttribute="leading" secondItem="LDU-3Q-wIq" secondAttribute="leading" id="Ydp-Ly-0Tf"/>
+                        <constraint firstItem="4hd-p9-L07" firstAttribute="top" secondItem="LDU-3Q-wIq" secondAttribute="top" id="lK7-0k-d3L"/>
+                        <constraint firstAttribute="trailing" secondItem="4hd-p9-L07" secondAttribute="trailing" id="z2l-NE-ikd"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="b4o-EP-jUc" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ECd-nC-e6T"/>
-                <constraint firstItem="b4o-EP-jUc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Y1u-CW-pyc"/>
+                <constraint firstItem="LDU-3Q-wIq" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="4Jh-Wx-AGO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="LDU-3Q-wIq" secondAttribute="bottom" id="FZj-NX-6FW"/>
+                <constraint firstItem="LDU-3Q-wIq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="TcF-rb-avh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LDU-3Q-wIq" secondAttribute="trailing" id="iMv-X9-8Z7"/>
             </constraints>
             <point key="canvasLocation" x="139" y="107"/>
         </view>

@@ -39,6 +39,8 @@ struct Location: Decodable {
 }
 
 extension Location: TableProvidable {
+    
+    
     var trueID: Int {
         return id
     }
@@ -47,9 +49,6 @@ extension Location: TableProvidable {
         return name
     }
     
-    var trueImage: String {
-        return "nil"
-    }
     
     
 }

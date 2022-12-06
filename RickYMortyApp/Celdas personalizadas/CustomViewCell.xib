@@ -45,6 +45,10 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="customCellImage" destination="1Ud-zG-htI" id="yKF-t7-J19"/>
+                <outlet property="customCellLabel" destination="e38-qz-Tuo" id="z5n-SW-NKV"/>
+            </connections>
             <point key="canvasLocation" x="137.68115942028987" y="84.375"/>
         </tableViewCell>
     </objects>

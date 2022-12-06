@@ -47,10 +47,5 @@ extension Episode: TableProvidable {
     var trueName: String {
         return name
     }
-    
-    var trueImage: String? {
-        return nil
-    }
-    
-    
+   
 }

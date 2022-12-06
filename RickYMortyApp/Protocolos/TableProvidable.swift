@@ -11,5 +11,5 @@ protocol TableProvidable {
     
     var trueID: Int { get }
     var trueName: String { get }
-    var trueImage: String? { get }
+//    var trueImage: String? { get }
 }

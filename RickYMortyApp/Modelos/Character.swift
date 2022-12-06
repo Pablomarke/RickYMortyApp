@@ -8,6 +8,7 @@
 import Foundation
 
 // MARK: - Character
+
 struct Character: Decodable {
     let id: Int
     let name: String
@@ -53,4 +54,18 @@ struct Character: Decodable {
     }
 }
 
-
+extension Character: TableProvidable {
+    var trueID: Int {
+        return id
+    }
+    
+    var trueName: String {
+        return name
+    }
+    
+    var trueImage: String {
+        return image
+    }
+    
+    
+}

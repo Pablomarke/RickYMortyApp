@@ -8,6 +8,7 @@
 import Foundation
 
 // MARK: - Episode
+
 struct Episode: Decodable {
     let id: Int
     let name: String
@@ -36,4 +37,20 @@ struct Episode: Decodable {
         case url
         case created
     }
+}
+
+extension Episode: TableProvidable {
+    var trueID: Int {
+        return id
+    }
+    
+    var trueName: String {
+        return name
+    }
+    
+    var trueImage: String? {
+        return nil
+    }
+    
+    
 }

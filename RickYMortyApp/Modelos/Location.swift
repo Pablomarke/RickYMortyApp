@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 // MARK: - Location
 struct Location: Decodable {
@@ -34,5 +35,21 @@ struct Location: Decodable {
         case created
         
     }
+    
+}
+
+extension Location: TableProvidable {
+    var trueID: Int {
+        return id
+    }
+    
+    var trueName: String {
+        return name
+    }
+    
+    var trueImage: String {
+        return "nil"
+    }
+    
     
 }

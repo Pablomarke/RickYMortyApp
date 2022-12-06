@@ -19,10 +19,11 @@ final class NetWorkService {
         
         let url = "\(cbaseUrl)character/\(id)"
         
-        AF.request(url, method: .get).validate(statusCode: cstatusOk).responseDecodable(of: Character.self) { response in
+        AF.request(url, method: .get).validate(statusCode: cstatusOk).responseDecodable(of: UserResponse.self) {
+            response in
             
             if let character = response.value?.name {
-                print(Character.self.CodingKeys.name)
+                print(character)
             } else {
                 print(response.error?.responseCode ?? "No error")
             }
@@ -31,9 +32,9 @@ final class NetWorkService {
     }
     func getAllCharacters(){
         
-        let url = "\(cbaseUrl)character/"
+        let urlAll = "\(cbaseUrl)character/"
         
-        AF.request(url, method: .get).validate(statusCode: cstatusOk).responseDecodable(of: Character.self) { response in
+        AF.request(urlAll, method: .get).validate(statusCode: cstatusOk).responseDecodable(of: Character.self) { response in
             
             if response != nil {
                 print("character")

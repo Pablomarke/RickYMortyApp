@@ -41,6 +41,8 @@
 		74477EF8293BA0B9009B0B0F /* Naughty Cartoons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74477EF6293BA0B9009B0B0F /* Naughty Cartoons.ttf */; };
 		74477EF9293BA0B9009B0B0F /* Naughty Cartoons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74477EF6293BA0B9009B0B0F /* Naughty Cartoons.ttf */; };
 		74E0A380293F59D9008C77AE /* TableProvidable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E0A37F293F59D9008C77AE /* TableProvidable.swift */; };
+		74E0A383293FB2E1008C77AE /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E0A381293FB2E1008C77AE /* CharacterCell.swift */; };
+		74E0A384293FB2E1008C77AE /* characterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74E0A382293FB2E1008C77AE /* characterCell.xib */; };
 		A387B0B65E6AA772233026A7 /* Pods_RickYMortyApp_RickYMortyAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A3AF6F3CB99E7B7E2D6A7F7 /* Pods_RickYMortyApp_RickYMortyAppUITests.framework */; };
 		D6F9042D9314155DBD937971 /* Pods_RickYMortyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF2BC2E44D09BABE808A2B1 /* Pods_RickYMortyApp.framework */; };
 		E1C20BE92CDBDCE582F636F2 /* Pods_RickYMortyAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93C2008DB2457EC88674F9E0 /* Pods_RickYMortyAppTests.framework */; };
@@ -99,6 +101,8 @@
 		74477EF2293B9FE0009B0B0F /* Cartoon Relief.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cartoon Relief.ttf"; path = "../../../../../Downloads/cartoon_relief/Cartoon Relief.ttf"; sourceTree = "<group>"; };
 		74477EF6293BA0B9009B0B0F /* Naughty Cartoons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Naughty Cartoons.ttf"; sourceTree = "<group>"; };
 		74E0A37F293F59D9008C77AE /* TableProvidable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableProvidable.swift; sourceTree = "<group>"; };
+		74E0A381293FB2E1008C77AE /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
+		74E0A382293FB2E1008C77AE /* characterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = characterCell.xib; sourceTree = "<group>"; };
 		887D6DC3DA9688D2051E2B04 /* Pods-RickYMortyAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickYMortyAppTests.debug.xcconfig"; path = "Target Support Files/Pods-RickYMortyAppTests/Pods-RickYMortyAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8A3AF6F3CB99E7B7E2D6A7F7 /* Pods_RickYMortyApp_RickYMortyAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RickYMortyApp_RickYMortyAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		921ED0B9506A8EB63B4D59AB /* Pods-RickYMortyApp-RickYMortyAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickYMortyApp-RickYMortyAppUITests.release.xcconfig"; path = "Target Support Files/Pods-RickYMortyApp-RickYMortyAppUITests/Pods-RickYMortyApp-RickYMortyAppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -230,6 +234,8 @@
 			children = (
 				7441C461293E2CC400A567CC /* CustomViewCell.swift */,
 				7441C462293E2CC400A567CC /* CustomViewCell.xib */,
+				74E0A381293FB2E1008C77AE /* CharacterCell.swift */,
+				74E0A382293FB2E1008C77AE /* characterCell.xib */,
 			);
 			path = "Celdas personalizadas";
 			sourceTree = "<group>";
@@ -394,6 +400,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74E0A384293FB2E1008C77AE /* characterCell.xib in Resources */,
 				7441C45B293E04A000A567CC /* EpisodeViewController.xib in Resources */,
 				7441C464293E2CC400A567CC /* CustomViewCell.xib in Resources */,
 				7441C453293E03E900A567CC /* CharacterViewController.xib in Resources */,
@@ -513,6 +520,7 @@
 				7441C456293E049100A567CC /* LocationViewController.swift in Sources */,
 				7441C45E293E04CD00A567CC /* SearchViewController.swift in Sources */,
 				740A1C68290FDDED0038A1DF /* Location.swift in Sources */,
+				74E0A383293FB2E1008C77AE /* CharacterCell.swift in Sources */,
 				743B614E2912F08A00494B06 /* PruebaViewController.swift in Sources */,
 				7441C45A293E04A000A567CC /* EpisodeViewController.swift in Sources */,
 				740A1C6A290FDE990038A1DF /* Episode.swift in Sources */,

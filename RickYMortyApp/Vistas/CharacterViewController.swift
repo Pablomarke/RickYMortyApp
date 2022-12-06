@@ -18,12 +18,15 @@ class CharacterViewController: UIViewController {
         self.tableCharacter.backgroundColor = .cyan
         tableCharacter.tintColor = .systemCyan
         
-        NetWorkService.shared.getAllCharacters()
+        //NetWorkService.shared.getAllCharacters()
         
         setupTableView()
         registerNib()
-        
         animateTableView()
+        
+        NetWorkService.shared.getCharacter(id: 2)
+      
+        print("\(URLResponse.self)")
         
     }
     
@@ -40,7 +43,8 @@ class CharacterViewController: UIViewController {
 }
 extension CharacterViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 100
+        
+        return 2
         
     }
     
@@ -51,6 +55,8 @@ extension CharacterViewController: UITableViewDelegate, UITableViewDataSource {
         return cell!
     }
 }
+
+// MARK: Animaciones
 extension CharacterViewController {
     private func animateTableView() {
         tableCharacter.reloadData()

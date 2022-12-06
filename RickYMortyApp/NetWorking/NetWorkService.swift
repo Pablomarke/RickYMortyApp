@@ -30,17 +30,19 @@ final class NetWorkService {
         }
         
     }
-    func getAllCharacters(){
-        
-        let urlAll = "\(cbaseUrl)character/"
-        
-        AF.request(urlAll, method: .get).validate(statusCode: cstatusOk).responseDecodable(of: Character.self) { response in
-            
-            if response != nil {
-                print("character")
-            } else {
-                print(response.error?.responseCode ?? "No error")
-            }
-        }
-    }
+    
+   // #Mark: Todo
+//    func getAllCharacters(){
+//
+//        let urlAll = "\(cbaseUrl)character/"
+//
+//        AF.request(urlAll, method: .get).validate(statusCode: cstatusOk).responseDecodable(of: UserResponse.self) { response in
+//
+//            if let characters = response {
+//                print("ok?")
+//            } else {
+//                print(response.error?.responseCode ?? "No error")
+//            }
+//        }
+//    }
 }

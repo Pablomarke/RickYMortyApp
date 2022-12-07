@@ -28,22 +28,26 @@ class EpisodeViewController: UIViewController {
     }
     private func registerNib() {
         let nib = UINib(nibName: "CustomViewCell", bundle: nil)
-        tableEpisode.register(nib, forCellReuseIdentifier: "CustomViewCell")
+        tableEpisode.register(nib,
+                              forCellReuseIdentifier: "CustomViewCell")
     }
     
 }
 
-extension EpisodeViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+extension EpisodeViewController: UITableViewDelegate,
+                                 UITableViewDataSource {
+    func tableView(_ tableView: UITableView,
+                   numberOfRowsInSection section: Int) -> Int {
         return 100
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableEpisode.dequeueReusableCell(withIdentifier: "CustomViewCell", for: indexPath) as! CustomViewCell?
+    func tableView(_ tableView: UITableView,
+                   cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableEpisode.dequeueReusableCell(withIdentifier: "CustomViewCell",
+                                                    for: indexPath) as! CustomViewCell?
         
         return cell!
     }
-    
 }
 
 extension EpisodeViewController {
@@ -64,7 +68,7 @@ extension EpisodeViewController {
                            delay: counter * 0.05,
                            usingSpringWithDamping: 0.8,
                            initialSpringVelocity: 6,
-                           options: .transitionFlipFromRight  ,
+                           options: .transitionFlipFromRight,
                            animations: {
                 cell.transform = CGAffineTransform.identity
             },

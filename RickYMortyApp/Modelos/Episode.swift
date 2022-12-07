@@ -10,6 +10,7 @@ import Foundation
 // MARK: - Episode
 
 struct Episode: Decodable {
+    
     let id: Int
     let name: String
     let airDate: String
@@ -19,6 +20,7 @@ struct Episode: Decodable {
     let created: String
     
     init(id: Int, name: String, airDate: String, episode: String, characters: [String], url: String, created: String){
+        
         self.id = id
         self.name = name
         self.airDate = airDate
@@ -29,6 +31,7 @@ struct Episode: Decodable {
     }
     
     enum CodingKeys: String, CodingKey {
+        
         case id
         case name
         case airDate = "air_date"
@@ -47,5 +50,4 @@ extension Episode: TableProvidable {
     var trueName: String {
         return name
     }
-   
 }

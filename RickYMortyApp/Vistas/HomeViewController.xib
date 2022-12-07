@@ -14,6 +14,7 @@
                 <outlet property="episodeButton" destination="z7d-SR-dXT" id="god-46-MfO"/>
                 <outlet property="homeImage" destination="L6f-J0-LdT" id="9e9-t1-Bn4"/>
                 <outlet property="locationButton" destination="cXL-vW-1qH" id="rs7-Co-7T9"/>
+                <outlet property="pruebasButton" destination="tCL-Qh-K9f" id="d50-hv-Sma"/>
                 <outlet property="searchButton" destination="gAM-Es-Pzt" id="0am-bO-WP7"/>
                 <outlet property="stackViewButton" destination="10M-hi-8aN" id="dd1-76-yMC"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -25,7 +26,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="10M-hi-8aN">
-                    <rect key="frame" x="50" y="500" width="314" height="302"/>
+                    <rect key="frame" x="50" y="368.5" width="314" height="433.5"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNC-XN-bb6">
                             <rect key="frame" x="0.0" y="0.0" width="314" height="53"/>
@@ -65,6 +66,24 @@
                             </buttonConfiguration>
                             <connections>
                                 <action selector="searchActionButton:" destination="-1" eventType="touchUpInside" id="6sn-Ej-atb"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCQ-9s-9Jm">
+                            <rect key="frame" x="0.0" y="332" width="314" height="31"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Prueba simple"/>
+                            <connections>
+                                <action selector="actionPruebaTwoButton:" destination="-1" eventType="touchUpInside" id="iup-iT-sR1"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tCL-Qh-K9f">
+                            <rect key="frame" x="0.0" y="393" width="314" height="40.5"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="PRUEBAS">
+                                <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="actionPruebasButton:" destination="-1" eventType="touchUpInside" id="nOt-Co-Mmy"/>
                             </connections>
                         </button>
                     </subviews>

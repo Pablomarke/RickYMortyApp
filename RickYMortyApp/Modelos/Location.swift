@@ -9,7 +9,9 @@ import Foundation
 import UIKit
 
 // MARK: - Location
+
 struct Location: Decodable {
+    
     let id: Int
     let name, type, dimension: String
     let residents: [String]
@@ -25,6 +27,7 @@ struct Location: Decodable {
         self.url = url
         self.created = created
     }
+    
     enum CodingKeys: String, CodingKey {
         case id
         case name
@@ -35,11 +38,9 @@ struct Location: Decodable {
         case created
         
     }
-    
 }
 
 extension Location: TableProvidable {
-    
     
     var trueID: Int {
         return id
@@ -48,7 +49,4 @@ extension Location: TableProvidable {
     var trueName: String {
         return name
     }
-    
-    
-    
 }

@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PtuebaViewController" customModule="RickYMortyApp" customModuleProvider="target">
             <connections>
                 <outlet property="getButton" destination="QYw-gn-2j9" id="Xrk-JB-JXC"/>
+                <outlet property="labelOne" destination="ZWe-Eb-qGc" id="waj-QI-ubk"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,21 +21,30 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4wm-oQ-qM2">
-                    <rect key="frame" x="95.5" y="194" width="223.5" height="668"/>
+                    <rect key="frame" x="95.5" y="173.5" width="223.5" height="688.5"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYw-gn-2j9">
-                            <rect key="frame" x="80" y="257" width="69.5" height="31"/>
+                            <rect key="frame" x="80" y="257" width="69.5" height="51.5"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="filled" title="prueba"/>
                             <connections>
                                 <action selector="getButtonAction:" destination="-1" eventType="touchUpInside" id="LD6-n4-fgp"/>
                             </connections>
                         </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWe-Eb-qGc">
+                            <rect key="frame" x="80" y="366" width="69.5" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
+                        <constraint firstItem="ZWe-Eb-qGc" firstAttribute="width" secondItem="QYw-gn-2j9" secondAttribute="height" multiplier="42:31" id="0Su-Uc-wuR"/>
                         <constraint firstAttribute="trailing" secondItem="QYw-gn-2j9" secondAttribute="trailing" constant="74" id="57H-Ib-Hyh"/>
+                        <constraint firstItem="ZWe-Eb-qGc" firstAttribute="leading" secondItem="QYw-gn-2j9" secondAttribute="leading" id="DTj-DS-xmL"/>
                         <constraint firstAttribute="bottom" secondItem="QYw-gn-2j9" secondAttribute="bottom" constant="380" id="LcW-qf-gKM"/>
+                        <constraint firstItem="ZWe-Eb-qGc" firstAttribute="centerX" secondItem="QYw-gn-2j9" secondAttribute="centerX" id="MlI-xk-6NB"/>
                         <constraint firstItem="QYw-gn-2j9" firstAttribute="top" secondItem="4wm-oQ-qM2" secondAttribute="top" constant="257" id="a1g-rC-tF2"/>
                         <constraint firstItem="QYw-gn-2j9" firstAttribute="leading" secondItem="4wm-oQ-qM2" secondAttribute="leading" constant="80" id="pM3-LL-xwu"/>
                     </constraints>

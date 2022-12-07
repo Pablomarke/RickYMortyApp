@@ -16,6 +16,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var locationButton: UIButton!
     @IBOutlet weak var episodeButton: UIButton!
     @IBOutlet weak var searchButton: UIButton!
+    @IBOutlet weak var pruebasButton: UIButton!
     
     
     override func viewDidLoad() {
@@ -46,25 +47,35 @@ class HomeViewController: UIViewController {
         let characterC = CharacterViewController()
         navigationController?.pushViewController(characterC,
                                                  animated: true)
-   
+        
     }
     @IBAction func actionLocationButton(_ sender: Any) {
         let locationC = LocationViewController()
         navigationController?.pushViewController(locationC,
                                                  animated: true)
-      
+        
     }
     @IBAction func episodeActionButton(_ sender: Any) {
         let episodeC = EpisodeViewController()
         navigationController?.pushViewController(episodeC,
                                                  animated: true)
-     
+        
     }
     @IBAction func searchActionButton(_ sender: Any) {
         let searchC = SearchViewController()
         navigationController?.pushViewController(searchC,
                                                  animated: true)
-     
+        
+    }
+    @IBAction func actionPruebasButton(_ sender: Any) {
+        let pruebasC = PruebaDetalleViewController()
+        navigationController?.pushViewController(pruebasC,
+                                                 animated: true)
+    }
+    @IBAction func actionPruebaTwoButton(_ sender: Any) {
+        let pruebaC = PruebaViewController()
+        navigationController?.pushViewController(pruebaC,
+                                                 animated: true)
     }
     
 }

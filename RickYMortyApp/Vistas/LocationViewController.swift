@@ -28,32 +28,39 @@ class LocationViewController: UIViewController {
     }
     private func registerNib() {
         let nib = UINib(nibName: "CustomViewCell", bundle: nil)
-        tableLocation.register(nib, forCellReuseIdentifier: "CustomViewCell")
+        tableLocation.register(nib,
+                               forCellReuseIdentifier: "CustomViewCell")
     }
     
 }
 
-extension LocationViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+extension LocationViewController: UITableViewDelegate,
+                                  UITableViewDataSource {
+    func tableView(_ tableView: UITableView,
+                   numberOfRowsInSection section: Int) -> Int {
         return 100
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView,
+                   cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableLocation.dequeueReusableCell(withIdentifier: "CustomViewCell", for: indexPath) as! CustomViewCell?
+        let cell = tableLocation.dequeueReusableCell(withIdentifier: "CustomViewCell",
+                                                     for: indexPath) as! CustomViewCell?
         
         return cell!
     }
 }
 
 extension LocationViewController {
+    
     private func animateTableView() {
         tableLocation.reloadData()
         let cells = tableLocation.visibleCells
         let heightTable = tableLocation.bounds.height
         
         for cell in cells {
-            cell.transform = CGAffineTransform(translationX: 0, y: heightTable)
+            cell.transform = CGAffineTransform(translationX: 0,
+                                               y: heightTable)
         }
         
         var counter: Double = 0

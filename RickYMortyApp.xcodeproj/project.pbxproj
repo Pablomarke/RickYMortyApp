@@ -42,7 +42,9 @@
 		74477EF9293BA0B9009B0B0F /* Naughty Cartoons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74477EF6293BA0B9009B0B0F /* Naughty Cartoons.ttf */; };
 		74CA25B729409ACC0072D27D /* PruebaDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CA25B529409ACC0072D27D /* PruebaDetalleViewController.swift */; };
 		74CA25B829409ACC0072D27D /* PruebaDetalleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74CA25B629409ACC0072D27D /* PruebaDetalleViewController.xib */; };
+		74CA25BC2940DFD00072D27D /* CharacterDetailProvidable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CA25BB2940DFD00072D27D /* CharacterDetailProvidable.swift */; };
 		74E0A380293F59D9008C77AE /* TableProvidable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E0A37F293F59D9008C77AE /* TableProvidable.swift */; };
+		74E973E129410C2A004F407D /* DataDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E973E029410C2A004F407D /* DataDecoder.swift */; };
 		A387B0B65E6AA772233026A7 /* Pods_RickYMortyApp_RickYMortyAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A3AF6F3CB99E7B7E2D6A7F7 /* Pods_RickYMortyApp_RickYMortyAppUITests.framework */; };
 		D6F9042D9314155DBD937971 /* Pods_RickYMortyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF2BC2E44D09BABE808A2B1 /* Pods_RickYMortyApp.framework */; };
 		E1C20BE92CDBDCE582F636F2 /* Pods_RickYMortyAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93C2008DB2457EC88674F9E0 /* Pods_RickYMortyAppTests.framework */; };
@@ -102,7 +104,9 @@
 		74477EF6293BA0B9009B0B0F /* Naughty Cartoons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Naughty Cartoons.ttf"; sourceTree = "<group>"; };
 		74CA25B529409ACC0072D27D /* PruebaDetalleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PruebaDetalleViewController.swift; sourceTree = "<group>"; };
 		74CA25B629409ACC0072D27D /* PruebaDetalleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PruebaDetalleViewController.xib; sourceTree = "<group>"; };
+		74CA25BB2940DFD00072D27D /* CharacterDetailProvidable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailProvidable.swift; sourceTree = "<group>"; };
 		74E0A37F293F59D9008C77AE /* TableProvidable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableProvidable.swift; sourceTree = "<group>"; };
+		74E973E029410C2A004F407D /* DataDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDecoder.swift; sourceTree = "<group>"; };
 		887D6DC3DA9688D2051E2B04 /* Pods-RickYMortyAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickYMortyAppTests.debug.xcconfig"; path = "Target Support Files/Pods-RickYMortyAppTests/Pods-RickYMortyAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8A3AF6F3CB99E7B7E2D6A7F7 /* Pods_RickYMortyApp_RickYMortyAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RickYMortyApp_RickYMortyAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		921ED0B9506A8EB63B4D59AB /* Pods-RickYMortyApp-RickYMortyAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickYMortyApp-RickYMortyAppUITests.release.xcconfig"; path = "Target Support Files/Pods-RickYMortyApp-RickYMortyAppUITests/Pods-RickYMortyApp-RickYMortyAppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -185,8 +189,8 @@
 				740A1C64290FDA180038A1DF /* Modelos */,
 				741FCCA229102E92002EC277 /* NetWorking */,
 				74E0A37E293F59B0008C77AE /* Protocolos */,
-				74477EED293B9A81009B0B0F /* Recursos */,
 				74477EE8293B908A009B0B0F /* Vistas */,
+				74477EED293B9A81009B0B0F /* Recursos */,
 				74CA25B429409A600072D27D /* GrupodePruebas */,
 			);
 			path = RickYMortyApp;
@@ -224,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				741FCCA329102ED8002EC277 /* NetWorkService.swift */,
+				74E973E029410C2A004F407D /* DataDecoder.swift */,
 			);
 			path = NetWorking;
 			sourceTree = "<group>";
@@ -281,6 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				74E0A37F293F59D9008C77AE /* TableProvidable.swift */,
+				74CA25BB2940DFD00072D27D /* CharacterDetailProvidable.swift */,
 			);
 			path = Protocolos;
 			sourceTree = "<group>";
@@ -518,8 +524,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74E973E129410C2A004F407D /* DataDecoder.swift in Sources */,
 				74E0A380293F59D9008C77AE /* TableProvidable.swift in Sources */,
 				7441C452293E03E900A567CC /* CharacterViewController.swift in Sources */,
+				74CA25BC2940DFD00072D27D /* CharacterDetailProvidable.swift in Sources */,
 				741FCCA429102ED8002EC277 /* NetWorkService.swift in Sources */,
 				7441C463293E2CC400A567CC /* CustomViewCell.swift in Sources */,
 				740A1C66290FDA8C0038A1DF /* Character.swift in Sources */,

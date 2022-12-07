@@ -57,6 +57,7 @@ extension CharacterViewController: UITableViewDelegate, UITableViewDataSource {
 }
 
 // MARK: Animaciones
+
 extension CharacterViewController {
     private func animateTableView() {
         tableCharacter.reloadData()

@@ -23,7 +23,7 @@ final class NetWorkService {
             response in
             
             if let character = response.value?.name {
-                print(character)
+              //  print(character)
             } else {
                 print(response.error?.responseCode ?? "No error")
             }

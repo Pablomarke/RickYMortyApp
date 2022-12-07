@@ -7,17 +7,17 @@
 
 import UIKit
 
-class CustomViewCell: UITableViewCell {
+public class CustomViewCell: UITableViewCell {
 
     @IBOutlet weak var customCellLabel: UILabel!
     @IBOutlet weak var customCellImage: UIImageView!
    
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
         super.awakeFromNib()
         
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
+    public override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         

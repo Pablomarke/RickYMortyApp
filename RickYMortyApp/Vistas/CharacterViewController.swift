@@ -9,6 +9,8 @@ import UIKit
 
 class CharacterViewController: UIViewController {
     
+    var charactersAllIn: [CharactersCollection]! = []
+    
     @IBOutlet weak var ViewCharacter: UIView!
     @IBOutlet weak var tableCharacter: UITableView!
     
@@ -23,6 +25,7 @@ class CharacterViewController: UIViewController {
         registerNib()
         animateTableView()
         
+        syncModelWithView()
         
     }
     
@@ -37,7 +40,17 @@ class CharacterViewController: UIViewController {
                                 forCellReuseIdentifier: "CustomViewCell")
     }
     
-}
+    private func syncModelWithView() {
+        NetWorkService.shared.getAllCharacters { charactersCollection in
+            self.charactersAllIn = [charactersCollection]
+        } failure: { Error in
+            print(Error.localizedDescription)
+        }
+
+        }
+
+    }
+
 
 extension CharacterViewController: UITableViewDelegate,
                                    UITableViewDataSource {
@@ -45,7 +58,7 @@ extension CharacterViewController: UITableViewDelegate,
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
         
-        return 2
+        return charactersAllIn.count
         
     }
     
@@ -53,6 +66,12 @@ extension CharacterViewController: UITableViewDelegate,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableCharacter.dequeueReusableCell(withIdentifier: "CustomViewCell",
                                                       for: indexPath) as! CustomViewCell?
+        
+        let characters = charactersAllIn[indexPath.item]
+        
+        cell?.customCellLabel?.text = "\(characters.count)"
+        cell?.customCellImage.image = UIImage(named: "RickYMorty")
+       
         return cell!
     }
 }

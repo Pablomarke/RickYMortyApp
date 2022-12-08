@@ -9,7 +9,7 @@ import Foundation
 
 protocol CharacterDetailProvidable {
     
-    var nameDetailed: String? {get}
+    var nameDetailed: String? { get }
     var statusDetailed: String? { get }
     var speciesDetailed: String? { get }
     var typeDetailed: String? { get }

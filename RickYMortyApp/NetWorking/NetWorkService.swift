@@ -18,9 +18,9 @@ final class NetWorkService {
     func getCharacter(id: Int, success: @escaping(_ character: Character) -> (),
                       failure: @escaping (_ error: Error?) -> ()) {
         
-        let url = "\(cbaseUrl)character/\(id)"
+        let singleUrl = "\(cbaseUrl)character/\(id)"
         
-        AF.request(url, method: .get).validate(statusCode: cstatusOk).responseDecodable(of: Character.self,
+        AF.request(singleUrl, method: .get).validate(statusCode: cstatusOk).responseDecodable(of: Character.self,
                                                                                         decoder: DataDecoder()) {
             response in
             
@@ -34,17 +34,20 @@ final class NetWorkService {
     }
     
     // #Mark: To do
-    //    func getAllCharacters(){
-    //
-    //        let urlAll = "\(cbaseUrl)character/"
-    //
-    //        AF.request(urlAll, method: .get).validate(statusCode: cstatusOk).responseDecodable(of: UserResponse.self) { response in
-    //
-    //            if let characters = response {
-    //                print("ok?")
-    //            } else {
-    //                print(response.error?.responseCode ?? "No error")
-    //            }
-    //        }
-    //    }
+    func getAllCharacters(onSucces success: @escaping (CharactersCollection) -> Void, failure: @escaping (Error) -> Void ){
+    
+        let fullCharactersUrl = "\(cbaseUrl)character/"
+        
+        AF.request(fullCharactersUrl, method: .get).validate(statusCode: cstatusOk).responseDecodable(of: CharactersCollection.self, decoder: DataDecoder()) {
+            response in
+            
+            if let characterCollection = response.value {
+                success(characterCollection)
+            } else {
+                failure(response.error!)
+            }
+        }
+           
+            
+        }
 }

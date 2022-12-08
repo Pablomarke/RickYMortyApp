@@ -71,3 +71,17 @@ extension Character: CharacterDetailProvidable {
         return gender
     }
 }
+
+extension Character: TableProvidable {
+    var trueID: Int {
+        return id
+    }
+    
+    var trueName: String {
+        return name
+    }
+    
+    var trueImage: String? {
+        return image
+    }
+}

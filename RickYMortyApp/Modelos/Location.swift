@@ -40,13 +40,4 @@ struct Location: Decodable {
     }
 }
 
-extension Location: TableProvidable {
-    
-    var trueID: Int {
-        return id
-    }
-    
-    var trueName: String {
-        return name
-    }
-}
+

@@ -42,12 +42,3 @@ struct Episode: Decodable {
     }
 }
 
-extension Episode: TableProvidable {
-    var trueID: Int {
-        return id
-    }
-    
-    var trueName: String {
-        return name
-    }
-}

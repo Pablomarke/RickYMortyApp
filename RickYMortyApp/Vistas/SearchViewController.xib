@@ -15,8 +15,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModule="RickYMortyApp" customModuleProvider="target">
             <connections>
+                <outlet property="characterButton" destination="VLm-G0-1J1" id="MfS-bP-eYL"/>
+                <outlet property="episodeButton" destination="bss-nd-gI1" id="0Mf-NS-dTV"/>
+                <outlet property="locationButton" destination="xMM-Px-P1x" id="2gq-ej-k6y"/>
                 <outlet property="searchField" destination="D1N-gQ-nWD" id="iCw-2C-W5c"/>
                 <outlet property="searchImage" destination="0wR-hu-tBj" id="qFM-yF-Hsk"/>
+                <outlet property="searchImageView" destination="wNk-bt-qGv" id="sC5-J7-aXg"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -28,13 +32,13 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GoN-tP-6zA">
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <subviews>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Escribe algo!! Vamos!!" borderStyle="roundedRect" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D1N-gQ-nWD">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Escribe algo!! Vamos!!" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D1N-gQ-nWD">
                             <rect key="frame" x="10" y="270" width="394" height="50"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="148-TD-MvS"/>
                             </constraints>
                             <color key="textColor" systemColor="linkColor"/>
-                            <fontDescription key="fontDescription" name="NaughtyCartoons" family="Naughty Cartoons" pointSize="80"/>
+                            <fontDescription key="fontDescription" name="NaughtyCartoons" family="Naughty Cartoons" pointSize="20"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rick" translatesAutoresizingMaskIntoConstraints="NO" id="0wR-hu-tBj">
@@ -43,15 +47,68 @@
                                 <constraint firstAttribute="height" constant="200" id="kqd-Ay-82k"/>
                             </constraints>
                         </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="LyI-VV-0uH">
+                            <rect key="frame" x="20" y="360" width="374" height="349"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VLm-G0-1J1" userLabel="Personaje">
+                                    <rect key="frame" x="2" y="0.0" width="370" height="63"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="PERSONAJE" titleAlignment="automatic">
+                                        <fontDescription key="titleFontDescription" name="NaughtyCartoons" family="Naughty Cartoons" pointSize="25"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="actionCharacter:" destination="-1" eventType="touchUpInside" id="dNx-fb-lHo"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xMM-Px-P1x" userLabel="Localización">
+                                    <rect key="frame" x="2" y="143" width="370" height="63"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="LOCALIZACION" titleAlignment="center">
+                                        <fontDescription key="titleFontDescription" name="NaughtyCartoons" family="Naughty Cartoons" pointSize="25"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="actionLocation:" destination="-1" eventType="touchUpInside" id="FL2-Ae-NUM"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bss-nd-gI1" userLabel="Episodio">
+                                    <rect key="frame" x="2" y="286" width="370" height="63"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="EPISODIO" titleAlignment="center">
+                                        <fontDescription key="titleFontDescription" name="NaughtyCartoons" family="Naughty Cartoons" pointSize="25"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="actionEpisode:" destination="-1" eventType="touchUpInside" id="kEG-4w-IPy"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="xMM-Px-P1x" secondAttribute="trailing" constant="2" id="6ek-dJ-e7Y"/>
+                                <constraint firstAttribute="trailing" secondItem="VLm-G0-1J1" secondAttribute="trailing" constant="2" id="82W-Hq-OJd"/>
+                                <constraint firstAttribute="trailing" secondItem="bss-nd-gI1" secondAttribute="trailing" constant="2" id="DNm-uJ-QGN"/>
+                                <constraint firstItem="VLm-G0-1J1" firstAttribute="leading" secondItem="LyI-VV-0uH" secondAttribute="leading" constant="2" id="hfq-Dy-HTL"/>
+                                <constraint firstItem="xMM-Px-P1x" firstAttribute="leading" secondItem="LyI-VV-0uH" secondAttribute="leading" constant="2" id="lp7-bS-vEd"/>
+                                <constraint firstItem="bss-nd-gI1" firstAttribute="leading" secondItem="LyI-VV-0uH" secondAttribute="leading" constant="2" id="okP-Hw-Ojd"/>
+                            </constraints>
+                        </stackView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bad" translatesAutoresizingMaskIntoConstraints="NO" id="wNk-bt-qGv">
+                            <rect key="frame" x="20" y="340" width="374" height="478"/>
+                        </imageView>
                     </subviews>
                     <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="D1N-gQ-nWD" secondAttribute="trailing" constant="10" id="BwD-UI-fUk"/>
                         <constraint firstItem="D1N-gQ-nWD" firstAttribute="leading" secondItem="GoN-tP-6zA" secondAttribute="leading" constant="10" id="EXl-Ip-ApS"/>
+                        <constraint firstAttribute="bottom" secondItem="wNk-bt-qGv" secondAttribute="bottom" id="IRw-EE-RZK"/>
+                        <constraint firstAttribute="trailing" secondItem="wNk-bt-qGv" secondAttribute="trailing" constant="20" id="L9b-if-43J"/>
                         <constraint firstAttribute="trailing" secondItem="0wR-hu-tBj" secondAttribute="trailing" constant="20" id="RWl-GA-1Qv"/>
-                        <constraint firstItem="D1N-gQ-nWD" firstAttribute="top" secondItem="0wR-hu-tBj" secondAttribute="bottom" constant="60" id="Ujx-di-8mF"/>
                         <constraint firstItem="0wR-hu-tBj" firstAttribute="leading" secondItem="GoN-tP-6zA" secondAttribute="leading" constant="20" id="YuH-bb-ZY8"/>
                         <constraint firstItem="0wR-hu-tBj" firstAttribute="top" secondItem="GoN-tP-6zA" secondAttribute="top" constant="10" id="cdN-E7-4VF"/>
+                        <constraint firstItem="LyI-VV-0uH" firstAttribute="top" secondItem="D1N-gQ-nWD" secondAttribute="bottom" constant="40" id="dr7-PX-tNy"/>
+                        <constraint firstItem="D1N-gQ-nWD" firstAttribute="top" secondItem="0wR-hu-tBj" secondAttribute="bottom" constant="60" id="mjx-pb-oOm"/>
+                        <constraint firstItem="wNk-bt-qGv" firstAttribute="leading" secondItem="GoN-tP-6zA" secondAttribute="leading" constant="20" id="nTl-XL-NNh"/>
+                        <constraint firstAttribute="trailing" secondItem="LyI-VV-0uH" secondAttribute="trailing" constant="20" id="qLL-c2-bgb"/>
+                        <constraint firstItem="wNk-bt-qGv" firstAttribute="top" secondItem="D1N-gQ-nWD" secondAttribute="bottom" constant="20" id="ybY-F7-mBT"/>
+                        <constraint firstItem="LyI-VV-0uH" firstAttribute="leading" secondItem="GoN-tP-6zA" secondAttribute="leading" constant="20" id="zQh-1H-bz4"/>
                     </constraints>
                 </view>
             </subviews>
@@ -63,10 +120,11 @@
                 <constraint firstItem="GoN-tP-6zA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="nAf-Pn-84K"/>
                 <constraint firstItem="GoN-tP-6zA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zYj-IE-WX6"/>
             </constraints>
-            <point key="canvasLocation" x="139" y="107"/>
+            <point key="canvasLocation" x="137.68115942028987" y="106.47321428571428"/>
         </view>
     </objects>
     <resources>
+        <image name="Bad" width="903" height="903"/>
         <image name="rick" width="430" height="155"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

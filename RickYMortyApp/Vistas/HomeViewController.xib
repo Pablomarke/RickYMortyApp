@@ -15,6 +15,7 @@
                 <outlet property="homeImage" destination="L6f-J0-LdT" id="9e9-t1-Bn4"/>
                 <outlet property="locationButton" destination="cXL-vW-1qH" id="rs7-Co-7T9"/>
                 <outlet property="pruebasButton" destination="tCL-Qh-K9f" id="d50-hv-Sma"/>
+                <outlet property="pruebasButtonTwo" destination="XCQ-9s-9Jm" id="TQS-mU-AWj"/>
                 <outlet property="searchButton" destination="gAM-Es-Pzt" id="0am-bO-WP7"/>
                 <outlet property="stackViewButton" destination="10M-hi-8aN" id="dd1-76-yMC"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>

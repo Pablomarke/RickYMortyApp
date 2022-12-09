@@ -11,12 +11,14 @@ import SwiftUI
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var homeImage: UIImageView!
+    
     @IBOutlet weak var stackViewButton: UIStackView!
     @IBOutlet weak var characterButton: UIButton!
     @IBOutlet weak var locationButton: UIButton!
     @IBOutlet weak var episodeButton: UIButton!
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var pruebasButton: UIButton!
+    @IBOutlet weak var pruebasButtonTwo: UIButton!
     
     
     override func viewDidLoad() {
@@ -36,6 +38,9 @@ class HomeViewController: UIViewController {
         
         searchButton.tintColor = .blue
         searchButton.backgroundColor = .systemCyan
+        
+        pruebasButton.isHidden = true
+        pruebasButtonTwo.isHidden = true
         
         view.backgroundColor = .cyan
     }

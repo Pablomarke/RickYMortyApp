@@ -39,7 +39,7 @@ class HomeViewController: UIViewController {
         searchButton.tintColor = .blue
         searchButton.backgroundColor = .systemCyan
         
-        pruebasButton.isHidden = true
+     //  pruebasButton.isHidden = true
         pruebasButtonTwo.isHidden = true
         
         view.backgroundColor = .cyan
@@ -73,7 +73,7 @@ class HomeViewController: UIViewController {
         
     }
     @IBAction func actionPruebasButton(_ sender: Any) {
-        let pruebasC = PruebaDetalleViewController()
+        let pruebasC = SelecetedCharactersViewController()
         navigationController?.pushViewController(pruebasC,
                                                  animated: true)
     }

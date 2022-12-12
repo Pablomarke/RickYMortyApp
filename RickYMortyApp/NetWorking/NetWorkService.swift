@@ -15,12 +15,12 @@ final class NetWorkService {
     private let cbaseUrl = "https://rickandmortyapi.com/api/"
     private let cstatusOk = 200...299
     
-    func getCharacter(id: Int, success: @escaping(_ character: Character) -> (),
+    func getCharacterById(id: Int, success: @escaping(_ character: Character) -> (),
                       failure: @escaping (_ error: Error?) -> ()) {
         
-        let singleUrl = "\(cbaseUrl)character/\(id)"
+        let idUrl = "\(cbaseUrl)character/\(id)"
         
-        AF.request(singleUrl, method: .get).validate(statusCode: cstatusOk).responseDecodable(of: Character.self,
+        AF.request(idUrl, method: .get).validate(statusCode: cstatusOk).responseDecodable(of: Character.self,
                                                                                         decoder: DataDecoder()) {
             response in
             
@@ -50,4 +50,20 @@ final class NetWorkService {
            
             
         }
+
+
+func getCharacterName(name: String, success: @escaping(_ character: CharactersCollection) ->(), failure: @escaping (_ error: Error?) -> ()) {
+    
+    let nameUrl = "\(cbaseUrl)character/?name=\(name)"
+    
+    AF.request(nameUrl, method: .get).validate(statusCode: cstatusOk).responseDecodable(of: CharactersCollection.self, decoder: DataDecoder()) {
+        response in
+        
+        if let characters = response.value {
+            success(characters)
+        } else {
+            failure(response.error)
+        }
+    }
+}
 }

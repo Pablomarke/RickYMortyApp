@@ -34,7 +34,7 @@ class PruebaDetalleViewController: UIViewController {
     
     private func syncModelWithView() {
         
-        NetWorkService.shared.getCharacter(id: 2) { character in
+        NetWorkService.shared.getCharacterById(id: 2) { character in
             self.labelOne.text = character.nameDetailed
             self.labelTwo.text = character.gender
         } failure: { error in

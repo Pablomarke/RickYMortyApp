@@ -22,11 +22,17 @@ class PruebaViewController: UIViewController {
     
     @IBAction func getButtonAction(_ sender: Any) {
         
-        NetWorkService.shared.getCharacter(id: 1) { (character) in
-            self.labelOne.text = character.nameDetailed
+        NetWorkService.shared.getCharacterName(name: "Jackson") { character in
+            self.labelOne.text = ""
         } failure: { error in
-            self.labelOne.text = "ERRor?"
+            self.labelOne.text = "Errorrrr???"
         }
+        
+//        NetWorkService.shared.getCharacter(id: 1) { (character) in
+//            self.labelOne.text = character.nameDetailed
+//        } failure: { error in
+//            self.labelOne.text = "ERRor?"
+//        }
 
 }
 }

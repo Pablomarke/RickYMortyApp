@@ -9,6 +9,10 @@ import UIKit
 
 class SelecetedCharactersViewController: UIViewController {
     
+    var character: Character!
+    
+
+    
     @IBOutlet weak var selectedTableCharacthers: UITableView!
     
     @IBOutlet weak var labelTwo: UILabel!
@@ -56,8 +60,10 @@ extension SelecetedCharactersViewController: UITableViewDataSource, UITableViewD
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = selectedTableCharacthers.dequeueReusableCell(withIdentifier: "CustomViewCell", for: indexPath) as! CustomViewCell?
         
-        cell?.customCellLabel.text = "ops!"
-        cell?.customCellImage.image = UIImage(named: "Good")
+        func config(character: Character){
+            cell?.customCellLabel.text = character.name
+            cell?.customCellImage.image = UIImage(named: character.image)
+        }
         
         return cell!
     }

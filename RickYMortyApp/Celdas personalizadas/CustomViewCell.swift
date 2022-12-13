@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 public class CustomViewCell: UITableViewCell {
 
@@ -22,5 +23,14 @@ public class CustomViewCell: UITableViewCell {
         super.setSelected(selected,
                           animated: animated)
 
+    }
+    
+    func configCellForCharacter(character: Character?){
+        guard let character = character else {
+            return
+        }
+
+        customCellLabel.text = character.name
+        customCellImage.sd_setImage(with: URL(string: character.image), placeholderImage: UIImage(named: "good"))
     }
 }

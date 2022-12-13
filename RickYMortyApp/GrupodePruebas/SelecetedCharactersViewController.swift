@@ -6,10 +6,11 @@
 //
 
 import UIKit
+import SDWebImage
 
 class SelecetedCharactersViewController: UIViewController {
     
-    var character: Character!
+    var character: Character?
     
 
     
@@ -38,11 +39,15 @@ class SelecetedCharactersViewController: UIViewController {
     }
     
     private func loadTableCharacters() {
-        NetWorkService.shared.getCharacterById(id: 1) { character in
+        NetWorkService.shared.getCharacterById(id: 1) { [weak self] character in
+            guard let self = self else { return }
+            self.character = character
             
             self.labelOne.text = character.name
             self.labelTwo.text = character.species
-            self.imageView.image = UIImage(named: character.image)
+            self.imageView.sd_setImage(with: URL(string: character.image), placeholderImage: UIImage(named: "good"))
+            self.selectedTableCharacthers.reloadData()
+            
             print("\(character.name)")
         } failure: { error in
             print(Error.self)
@@ -58,14 +63,13 @@ extension SelecetedCharactersViewController: UITableViewDataSource, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = selectedTableCharacthers.dequeueReusableCell(withIdentifier: "CustomViewCell", for: indexPath) as! CustomViewCell?
-        
-        func config(character: Character){
-            cell?.customCellLabel.text = character.name
-            cell?.customCellImage.image = UIImage(named: character.image)
+        guard let cell = selectedTableCharacthers.dequeueReusableCell(withIdentifier: "CustomViewCell", for: indexPath) as? CustomViewCell else {
+            return UITableViewCell()
         }
         
-        return cell!
+        cell.configCellForCharacter(character: character)
+        
+        return cell
     }
     
 }

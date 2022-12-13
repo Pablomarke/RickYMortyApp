@@ -6,7 +6,9 @@ target 'RickYMortyApp' do
   use_frameworks!
 
   # Pods for RickYMortyApp
-
+  platform :ios, '8.0'
+  pod 'SDWebImage', '~> 5.0'
+  
   target 'RickYMortyAppTests' do
     inherit! :search_paths
     # Pods for testing

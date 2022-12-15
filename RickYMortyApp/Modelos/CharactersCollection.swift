@@ -8,6 +8,7 @@
 import Foundation
 
 struct CharactersCollection: Decodable {
+    
     let count: Int
     let pages: Int
     
@@ -21,7 +22,6 @@ struct CharactersCollection: Decodable {
         
     }
 
-
 enum CodingKeys: CodingKey {
     case count
     case pages
@@ -31,13 +31,16 @@ enum CodingKeys: CodingKey {
     init(from decoder: Decoder) throws {
         
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        count = try container.decode(Int.self, forKey: .count)
-        pages = try container.decode(Int.self, forKey: .pages)
+        count = try container.decode(Int.self,
+                                     forKey: .count)
+        pages = try container.decode(Int.self,
+                                     forKey: .pages)
 
+        let infoContainer = try container.nestedContainer(keyedBy: CodingKeys.self,
+                                                          forKey: .results)
         
-        let infoContainer = try container.nestedContainer(keyedBy: CodingKeys.self, forKey: .results)
-        
-        results = try infoContainer.decode([Character].self, forKey: .results)
+        results = try infoContainer.decode([Character].self,
+                                           forKey: .results)
     }
 }
 

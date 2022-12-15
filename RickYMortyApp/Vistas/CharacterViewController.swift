@@ -9,7 +9,7 @@ import UIKit
 
 class CharacterViewController: UIViewController {
     
-    var charactersAllIn: [CharactersCollection]! = []
+    var charactersAllIn: [Character]?
     
     @IBOutlet weak var ViewCharacter: UIView!
     @IBOutlet weak var tableCharacter: UITableView!
@@ -18,12 +18,11 @@ class CharacterViewController: UIViewController {
         super.viewDidLoad()
         
         self.title = "Personajes"
-        self.tableCharacter.backgroundColor = .cyan
+        
         tableCharacter.tintColor = .systemCyan
         
-        setupTableView()
         registerNib()
-        animateTableView()
+        setupTableView()
         
         syncModelWithView()
         
@@ -35,54 +34,49 @@ class CharacterViewController: UIViewController {
     }
     
     private func registerNib() {
-        let nib = UINib(nibName: "CustomViewCell", bundle: nil)
+        let nib = UINib(nibName: "AllCharacterCell",
+                        bundle: nil)
         tableCharacter.register(nib,
-                                forCellReuseIdentifier: "CustomViewCell")
+                                forCellReuseIdentifier: "AllCharacterCell")
     }
     
     private func syncModelWithView() {
-        NetWorkService.shared.getAllCharacters { charactersCollection in
-            self.charactersAllIn = [charactersCollection]
+        NetWorkService.shared.getAllCharacters { rickYMortyCharacters in
+            self.charactersAllIn = rickYMortyCharacters
+            self.tableCharacter.backgroundColor = .cyan
+            self.tableCharacter.reloadData()
+            self.animateTableView()
         } failure: { Error in
             print(Error.localizedDescription)
         }
-
-        }
-
     }
-
+}
 
 extension CharacterViewController: UITableViewDelegate,
                                    UITableViewDataSource {
+    func tableView(_ tableView: UITableView,
+                   cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cellTwo = tableCharacter.dequeueReusableCell(withIdentifier: "AllCharacterCell",
+                                                               for: indexPath) as? AllCharacterCell else {
+            return UITableViewCell()
+        }
+        cellTwo.config(character: charactersAllIn?[indexPath.row])
+        return cellTwo
+    }
     
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
         
-        return charactersAllIn.count
-        
-    }
-    
-    func tableView(_ tableView: UITableView,
-                   cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableCharacter.dequeueReusableCell(withIdentifier: "CustomViewCell",
-                                                      for: indexPath) as! CustomViewCell?
-        
-        let characters = charactersAllIn[indexPath.item]
-        
-        cell?.customCellLabel?.text = "\(characters.count)"
-        cell?.customCellImage.image = UIImage(named: "RickYMorty")
-       
-        return cell!
+        return charactersAllIn?.count ?? 0
     }
 }
 
-// MARK: Animaciones
+// MARK: Animaciones Por hacer
 
 extension CharacterViewController {
     
     private func animateTableView() {
-        tableCharacter.reloadData()
-        
+       
         let cells = tableCharacter.visibleCells
         let heightTable = tableCharacter.bounds.height
         
@@ -92,7 +86,6 @@ extension CharacterViewController {
         }
         
         var counter: Double = 0
-        
         for cell in cells {
             UIView.animate(withDuration: 1,
                            delay: counter * 0.05,

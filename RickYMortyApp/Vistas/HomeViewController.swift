@@ -39,8 +39,8 @@ class HomeViewController: UIViewController {
         searchButton.tintColor = .blue
         searchButton.backgroundColor = .systemCyan
         
-     //  pruebasButton.isHidden = true
-        pruebasButtonTwo.isHidden = true
+        //  pruebasButton.isHidden = true
+        //  pruebasButtonTwo.isHidden = true
         
         view.backgroundColor = .cyan
     }

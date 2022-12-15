@@ -34,12 +34,13 @@ class SelecetedCharactersViewController: UIViewController {
         
     }
     private func registerNib(){
-        let nib = UINib(nibName: "CustomViewCell", bundle: nil)
+        let nib = UINib(nibName: "CustomViewCell",
+                        bundle: nil)
         selectedTableCharacthers.register(nib, forCellReuseIdentifier: "CustomViewCell")
     }
     
     private func loadTableCharacters() {
-        NetWorkService.shared.getCharacterById(id: 1) { [weak self] character in
+        NetWorkService.shared.getCharacterById(id: 92) { [weak self] character in
             guard let self = self else { return }
             self.character = character
             

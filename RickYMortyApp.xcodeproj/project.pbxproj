@@ -49,6 +49,9 @@
 		74E45F6129421A70005DC86B /* CharactersCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E45F6029421A70005DC86B /* CharactersCollection.swift */; };
 		74E45F6329422643005DC86B /* AllCharactersProvidable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E45F6229422642005DC86B /* AllCharactersProvidable.swift */; };
 		74E973E129410C2A004F407D /* DataDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E973E029410C2A004F407D /* DataDecoder.swift */; };
+		74F1D2FA2948A9CD00BF36C6 /* AllCharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F1D2F82948A9CD00BF36C6 /* AllCharacterCell.swift */; };
+		74F1D2FB2948A9CD00BF36C6 /* AllCharacterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74F1D2F92948A9CD00BF36C6 /* AllCharacterCell.xib */; };
+		74F1D2FF2949E9DF00BF36C6 /* RickYMortyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F1D2FE2949E9DF00BF36C6 /* RickYMortyResponse.swift */; };
 		A387B0B65E6AA772233026A7 /* Pods_RickYMortyApp_RickYMortyAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A3AF6F3CB99E7B7E2D6A7F7 /* Pods_RickYMortyApp_RickYMortyAppUITests.framework */; };
 		D6F9042D9314155DBD937971 /* Pods_RickYMortyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF2BC2E44D09BABE808A2B1 /* Pods_RickYMortyApp.framework */; };
 		E1C20BE92CDBDCE582F636F2 /* Pods_RickYMortyAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93C2008DB2457EC88674F9E0 /* Pods_RickYMortyAppTests.framework */; };
@@ -115,6 +118,9 @@
 		74E45F6029421A70005DC86B /* CharactersCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersCollection.swift; sourceTree = "<group>"; };
 		74E45F6229422642005DC86B /* AllCharactersProvidable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCharactersProvidable.swift; sourceTree = "<group>"; };
 		74E973E029410C2A004F407D /* DataDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDecoder.swift; sourceTree = "<group>"; };
+		74F1D2F82948A9CD00BF36C6 /* AllCharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCharacterCell.swift; sourceTree = "<group>"; };
+		74F1D2F92948A9CD00BF36C6 /* AllCharacterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllCharacterCell.xib; sourceTree = "<group>"; };
+		74F1D2FE2949E9DF00BF36C6 /* RickYMortyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickYMortyResponse.swift; sourceTree = "<group>"; };
 		887D6DC3DA9688D2051E2B04 /* Pods-RickYMortyAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickYMortyAppTests.debug.xcconfig"; path = "Target Support Files/Pods-RickYMortyAppTests/Pods-RickYMortyAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8A3AF6F3CB99E7B7E2D6A7F7 /* Pods_RickYMortyApp_RickYMortyAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RickYMortyApp_RickYMortyAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		921ED0B9506A8EB63B4D59AB /* Pods-RickYMortyApp-RickYMortyAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickYMortyApp-RickYMortyAppUITests.release.xcconfig"; path = "Target Support Files/Pods-RickYMortyApp-RickYMortyAppUITests/Pods-RickYMortyApp-RickYMortyAppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -229,6 +235,7 @@
 				74E45F6029421A70005DC86B /* CharactersCollection.swift */,
 				740A1C69290FDE990038A1DF /* Episode.swift */,
 				740A1C67290FDDED0038A1DF /* Location.swift */,
+				74F1D2FE2949E9DF00BF36C6 /* RickYMortyResponse.swift */,
 			);
 			path = Modelos;
 			sourceTree = "<group>";
@@ -247,6 +254,8 @@
 			children = (
 				7441C461293E2CC400A567CC /* CustomViewCell.swift */,
 				7441C462293E2CC400A567CC /* CustomViewCell.xib */,
+				74F1D2F82948A9CD00BF36C6 /* AllCharacterCell.swift */,
+				74F1D2F92948A9CD00BF36C6 /* AllCharacterCell.xib */,
 			);
 			path = "Celdas personalizadas";
 			sourceTree = "<group>";
@@ -441,6 +450,7 @@
 				740A1C3C290FD7CE0038A1DF /* Main.storyboard in Resources */,
 				7441C457293E049100A567CC /* LocationViewController.xib in Resources */,
 				74B68EAD2944AF1F0059809D /* SelecetedCharactersViewController.xib in Resources */,
+				74F1D2FB2948A9CD00BF36C6 /* AllCharacterCell.xib in Resources */,
 				74477EF7293BA0B9009B0B0F /* Naughty Cartoons.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -579,6 +589,7 @@
 				7441C452293E03E900A567CC /* CharacterViewController.swift in Sources */,
 				74CA25BC2940DFD00072D27D /* CharacterDetailProvidable.swift in Sources */,
 				741FCCA429102ED8002EC277 /* NetWorkService.swift in Sources */,
+				74F1D2FF2949E9DF00BF36C6 /* RickYMortyResponse.swift in Sources */,
 				74E45F6129421A70005DC86B /* CharactersCollection.swift in Sources */,
 				7441C463293E2CC400A567CC /* CustomViewCell.swift in Sources */,
 				740A1C66290FDA8C0038A1DF /* Character.swift in Sources */,
@@ -589,6 +600,7 @@
 				7441C45E293E04CD00A567CC /* SearchViewController.swift in Sources */,
 				740A1C68290FDDED0038A1DF /* Location.swift in Sources */,
 				74CA25B729409ACC0072D27D /* PruebaDetalleViewController.swift in Sources */,
+				74F1D2FA2948A9CD00BF36C6 /* AllCharacterCell.swift in Sources */,
 				743B614E2912F08A00494B06 /* PruebaViewController.swift in Sources */,
 				7441C45A293E04A000A567CC /* EpisodeViewController.swift in Sources */,
 				740A1C6A290FDE990038A1DF /* Episode.swift in Sources */,

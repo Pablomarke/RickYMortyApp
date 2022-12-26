@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Naughty Cartoons.ttf">
+            <string>NaughtyCartoons</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CharacterDetailViewController" customModule="RickYMortyApp" customModuleProvider="target">
+            <connections>
+                <outlet property="characterImage" destination="1wW-dF-G8J" id="ORy-2M-96p"/>
+                <outlet property="charactersCollecion" destination="u89-Jw-EfU" id="XAy-Sa-X2k"/>
+                <outlet property="genderStatus" destination="MVg-ZX-zNO" id="6aX-b5-DJL"/>
+                <outlet property="speciesLabel" destination="ybT-e1-7K4" id="EBp-Dp-d47"/>
+                <outlet property="statusLabel" destination="x9f-Cy-7Es" id="HVt-8p-geh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1wW-dF-G8J">
+                    <rect key="frame" x="57" y="64" width="300" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="9Is-v6-gs3"/>
+                        <constraint firstAttribute="height" constant="300" id="QRx-3X-VIQ"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="u89-Jw-EfU">
+                    <rect key="frame" x="6" y="384" width="402" height="506"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9f-Cy-7Es">
+                            <rect key="frame" x="155" y="0.0" width="92" height="162"/>
+                            <fontDescription key="fontDescription" name="NaughtyCartoons" family="Naughty Cartoons" pointSize="20"/>
+                            <color key="textColor" systemColor="linkColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybT-e1-7K4">
+                            <rect key="frame" x="155" y="172" width="92" height="162"/>
+                            <fontDescription key="fontDescription" name="NaughtyCartoons" family="Naughty Cartoons" pointSize="20"/>
+                            <color key="textColor" systemColor="linkColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVg-ZX-zNO">
+                            <rect key="frame" x="155" y="344" width="92" height="162"/>
+                            <fontDescription key="fontDescription" name="NaughtyCartoons" family="Naughty Cartoons" pointSize="20"/>
+                            <color key="textColor" systemColor="linkColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="1wW-dF-G8J" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="AuU-1g-vAX"/>
+                <constraint firstItem="u89-Jw-EfU" firstAttribute="top" secondItem="1wW-dF-G8J" secondAttribute="bottom" constant="20" id="KpM-0p-qF9"/>
+                <constraint firstItem="1wW-dF-G8J" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ju3-Q2-cz0"/>
+                <constraint firstItem="u89-Jw-EfU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="6" id="nm2-sV-V6C"/>
+                <constraint firstAttribute="bottom" secondItem="u89-Jw-EfU" secondAttribute="bottom" constant="6" id="qEv-lV-rCb"/>
+                <constraint firstAttribute="trailing" secondItem="u89-Jw-EfU" secondAttribute="trailing" constant="6" id="vJt-XH-OjZ"/>
+            </constraints>
+            <point key="canvasLocation" x="141" y="115"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

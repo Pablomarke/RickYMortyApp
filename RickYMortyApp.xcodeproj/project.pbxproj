@@ -40,6 +40,8 @@
 		74477EF7293BA0B9009B0B0F /* Naughty Cartoons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74477EF6293BA0B9009B0B0F /* Naughty Cartoons.ttf */; };
 		74477EF8293BA0B9009B0B0F /* Naughty Cartoons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74477EF6293BA0B9009B0B0F /* Naughty Cartoons.ttf */; };
 		74477EF9293BA0B9009B0B0F /* Naughty Cartoons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74477EF6293BA0B9009B0B0F /* Naughty Cartoons.ttf */; };
+		746B6496295A06F20071E65E /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746B6494295A06F20071E65E /* CharacterDetailViewController.swift */; };
+		746B6497295A06F20071E65E /* CharacterDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 746B6495295A06F20071E65E /* CharacterDetailViewController.xib */; };
 		74B68EAC2944AF1F0059809D /* SelecetedCharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B68EAA2944AF1F0059809D /* SelecetedCharactersViewController.swift */; };
 		74B68EAD2944AF1F0059809D /* SelecetedCharactersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74B68EAB2944AF1F0059809D /* SelecetedCharactersViewController.xib */; };
 		74CA25B729409ACC0072D27D /* PruebaDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CA25B529409ACC0072D27D /* PruebaDetalleViewController.swift */; };
@@ -109,6 +111,8 @@
 		74477EEA293B90C8009B0B0F /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		74477EF2293B9FE0009B0B0F /* Cartoon Relief.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cartoon Relief.ttf"; path = "../../../../../Downloads/cartoon_relief/Cartoon Relief.ttf"; sourceTree = "<group>"; };
 		74477EF6293BA0B9009B0B0F /* Naughty Cartoons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Naughty Cartoons.ttf"; sourceTree = "<group>"; };
+		746B6494295A06F20071E65E /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
+		746B6495295A06F20071E65E /* CharacterDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterDetailViewController.xib; sourceTree = "<group>"; };
 		74B68EAA2944AF1F0059809D /* SelecetedCharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelecetedCharactersViewController.swift; sourceTree = "<group>"; };
 		74B68EAB2944AF1F0059809D /* SelecetedCharactersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelecetedCharactersViewController.xib; sourceTree = "<group>"; };
 		74CA25B529409ACC0072D27D /* PruebaDetalleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PruebaDetalleViewController.swift; sourceTree = "<group>"; };
@@ -275,6 +279,8 @@
 				7441C45D293E04CD00A567CC /* SearchViewController.xib */,
 				740A1C3A290FD7CE0038A1DF /* Main.storyboard */,
 				740A1C3F290FD7CF0038A1DF /* LaunchScreen.storyboard */,
+				746B6494295A06F20071E65E /* CharacterDetailViewController.swift */,
+				746B6495295A06F20071E65E /* CharacterDetailViewController.xib */,
 			);
 			path = Vistas;
 			sourceTree = "<group>";
@@ -440,6 +446,7 @@
 				7441C45B293E04A000A567CC /* EpisodeViewController.xib in Resources */,
 				7441C464293E2CC400A567CC /* CustomViewCell.xib in Resources */,
 				7441C453293E03E900A567CC /* CharacterViewController.xib in Resources */,
+				746B6497295A06F20071E65E /* CharacterDetailViewController.xib in Resources */,
 				740A1C41290FD7CF0038A1DF /* LaunchScreen.storyboard in Resources */,
 				74CA25B829409ACC0072D27D /* PruebaDetalleViewController.xib in Resources */,
 				74477EF3293B9FE0009B0B0F /* Cartoon Relief.ttf in Resources */,
@@ -603,6 +610,7 @@
 				74F1D2FA2948A9CD00BF36C6 /* AllCharacterCell.swift in Sources */,
 				743B614E2912F08A00494B06 /* PruebaViewController.swift in Sources */,
 				7441C45A293E04A000A567CC /* EpisodeViewController.swift in Sources */,
+				746B6496295A06F20071E65E /* CharacterDetailViewController.swift in Sources */,
 				740A1C6A290FDE990038A1DF /* Episode.swift in Sources */,
 				740A1C35290FD7CE0038A1DF /* AppDelegate.swift in Sources */,
 			);

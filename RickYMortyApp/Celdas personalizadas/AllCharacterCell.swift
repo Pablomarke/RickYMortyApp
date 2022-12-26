@@ -24,9 +24,10 @@ class AllCharacterCell: UITableViewCell {
                               animated: Bool) {
         super.setSelected(selected,
                           animated: animated)
+        
     }
     
-    func config(character: Character?){
+    func config(character: Character?) {
       
         guard let character = character else {
             return

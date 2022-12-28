@@ -271,6 +271,8 @@
 				74477EEA293B90C8009B0B0F /* HomeViewController.xib */,
 				7441C450293E03E900A567CC /* CharacterViewController.swift */,
 				7441C451293E03E900A567CC /* CharacterViewController.xib */,
+				746B6494295A06F20071E65E /* CharacterDetailViewController.swift */,
+				746B6495295A06F20071E65E /* CharacterDetailViewController.xib */,
 				7441C454293E049100A567CC /* LocationViewController.swift */,
 				7441C455293E049100A567CC /* LocationViewController.xib */,
 				7441C458293E04A000A567CC /* EpisodeViewController.swift */,
@@ -279,8 +281,6 @@
 				7441C45D293E04CD00A567CC /* SearchViewController.xib */,
 				740A1C3A290FD7CE0038A1DF /* Main.storyboard */,
 				740A1C3F290FD7CF0038A1DF /* LaunchScreen.storyboard */,
-				746B6494295A06F20071E65E /* CharacterDetailViewController.swift */,
-				746B6495295A06F20071E65E /* CharacterDetailViewController.xib */,
 			);
 			path = Vistas;
 			sourceTree = "<group>";

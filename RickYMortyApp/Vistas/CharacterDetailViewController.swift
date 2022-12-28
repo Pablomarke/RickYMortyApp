@@ -9,8 +9,6 @@ import UIKit
 
 class CharacterDetailViewController: UIViewController {
 
-    var oneCharacter: Character?
-    
     @IBOutlet weak var characterImage: UIImageView!
     @IBOutlet weak var charactersCollecion: UIStackView!
     @IBOutlet weak var statusLabel: UILabel!
@@ -19,27 +17,22 @@ class CharacterDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Detalle (provisional)"
         self.view.backgroundColor = .cyan
-        
         syncDetail()
        
     }
     
     private func syncDetail() {
-        NetWorkService.shared.getCharacterById(id: 2) { character in
+        
+        NetWorkService.shared.getCharacterById(id: 2 ) { character in
             self.title = character.nameDetailed
             self.characterImage.sd_setImage(with: URL(string: character.image))
             self.speciesLabel.text = character.speciesDetailed
             self.statusLabel.text = character.statusDetailed
             self.genderStatus.text = character.genderDetailed
-            
         } failure: { error in
             print(error.debugDescription)
         }
-
-        
     }
-
 }
 

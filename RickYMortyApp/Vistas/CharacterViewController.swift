@@ -45,7 +45,7 @@ class CharacterViewController: UIViewController {
             self.charactersAllIn = rickYMortyCharacters
             self.tableCharacter.backgroundColor = .cyan
             self.tableCharacter.reloadData()
-            self.animateTableView()
+           // self.animateTableView()
         } failure: { Error in
             print(Error.localizedDescription)
         }
@@ -54,6 +54,7 @@ class CharacterViewController: UIViewController {
 
 extension CharacterViewController: UITableViewDelegate,
                                    UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cellTwo = tableCharacter.dequeueReusableCell(withIdentifier: "AllCharacterCell",
@@ -69,22 +70,41 @@ extension CharacterViewController: UITableViewDelegate,
         
         return charactersAllIn?.count ?? 0
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        //NetWorkService.shared.getCharacterById(id: indexPath.row + 1) { [self] character in
+        
+            let pruebasC = CharacterDetailViewController()
+            self.navigationController?.pushViewController(pruebasC,
+                                                          animated: true)
+//            detailC.title = character.nameDetailed
+//            detailC.characterImage.sd_setImage(with: URL(string: character.image))
+//            detailC.speciesLabel.text = character.speciesDetailed
+//            detailC.statusLabel.text = character.statusDetailed
+            // detailC.genderStatus.text = character.genderDetailed
+//
+//            print(character.genderDetailed)
+//        } failure: { error in
+//            print(error.debugDescription)
+//        }
+    }
 }
 
-// MARK: Animaciones Por hacer
+// MARK: Animaciones
 
 extension CharacterViewController {
-    
+
     private func animateTableView() {
-       
+
         let cells = tableCharacter.visibleCells
         let heightTable = tableCharacter.bounds.height
-        
+
         for cell in cells {
             cell.transform = CGAffineTransform(translationX: 0,
                                                y: heightTable)
         }
-        
+
         var counter: Double = 0
         for cell in cells {
             UIView.animate(withDuration: 1,
